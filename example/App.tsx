@@ -16,8 +16,10 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  View,
+  // View,
 } from 'react-native';
+
+import { View } from 'renceng-native';
 
 import {
   Colors,
