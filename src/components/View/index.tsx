@@ -1,8 +1,13 @@
-import React from 'react'
-import { View as RNView, ViewProps } from 'react-native'
+// import React from 'react'
+// // import { View as RNView, ViewProps } from 'react-native'
 
-const View: React.FC<ViewProps> = props => {
-  return <RNView {...props} />
-}
+// import { View as NBView } from 'native-base'
 
-export default View
+// const View: React.FC = props => {
+//   return <NBView {...props} />
+// }
+
+// export default View
+
+
+export { View } from 'native-base'
