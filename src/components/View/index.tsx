@@ -1,20 +1,38 @@
 import React from 'react';
-import { View as RNView } from 'react-native';
+import { View as RNView, ViewProps as RNViewProps } from 'react-native';
 
 import {
   space,
+  SpaceProps,
   color,
+  ColorProps,
   layout,
+  LayoutProps,
   grid,
+  GridProps,
   flexbox,
+  FlexboxProps,
   border,
+  BorderProps,
   position,
+  PositionProps,
   shadow,
+  ShadowProps,
 } from 'styled-system';
 import styled from '@emotion/native';
 
-const View = (props: any) => {
-  const BaseView = styled(RNView)`
+type ViewProps = SpaceProps &
+  ColorProps &
+  LayoutProps &
+  GridProps &
+  FlexboxProps &
+  BorderProps &
+  PositionProps &
+  ShadowProps &
+  RNViewProps;
+
+const View = (props: ViewProps) => {
+  const BaseView = styled(RNView)<ViewProps>`
     ${space}
     ${color}
     ${layout}
