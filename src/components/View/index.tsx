@@ -1,5 +1,5 @@
-import React from 'react'
-import { View as RNView } from 'react-native'
+import React from 'react';
+import { View as RNView } from 'react-native';
 
 import {
   space,
@@ -9,9 +9,9 @@ import {
   flexbox,
   border,
   position,
-  shadow
-} from 'styled-system'
-import styled from '@emotion/native'
+  shadow,
+} from 'styled-system';
+import styled from '@emotion/native';
 
 const View = (props: any) => {
   const BaseView = styled(RNView)`
@@ -23,8 +23,8 @@ const View = (props: any) => {
     ${border}
     ${position}
     ${shadow}
-  `
-  return <BaseView {...props} />
-}
+  `;
+  return <BaseView {...props} />;
+};
 
-export default View
+export default View;
