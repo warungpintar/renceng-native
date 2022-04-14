@@ -1,13 +1,30 @@
-// import React from 'react'
-// // import { View as RNView, ViewProps } from 'react-native'
+import React from 'react'
+import { View as RNView } from 'react-native'
 
-// import { View as NBView } from 'native-base'
+import {
+  space,
+  color,
+  layout,
+  grid,
+  flexbox,
+  border,
+  position,
+  shadow
+} from 'styled-system'
+import styled from '@emotion/native'
 
-// const View: React.FC = props => {
-//   return <NBView {...props} />
-// }
+const View = (props: any) => {
+  const BaseView = styled(RNView)`
+    ${space}
+    ${color}
+    ${layout}
+    ${grid}
+    ${flexbox}
+    ${border}
+    ${position}
+    ${shadow}
+  `
+  return <BaseView {...props} />
+}
 
-// export default View
-
-
-export { View } from 'native-base'
+export default View
