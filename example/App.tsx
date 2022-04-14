@@ -16,12 +16,10 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  // View,
+  View,
 } from 'react-native';
 
-import { View } from 'renceng-native';
-
-import { NativeBaseProvider as NBProvider, View as NBView } from 'native-base';
+import { View as RencengView } from 'renceng-native';
 
 import {
   Colors,
@@ -36,7 +34,7 @@ const Section: React.FC<{
 }> = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <NBView style={styles.sectionContainer}>
+    <RencengView style={styles.sectionContainer} bg="green" borderRadius={8}>
       <Text
         style={[
           styles.sectionTitle,
@@ -55,7 +53,7 @@ const Section: React.FC<{
         ]}>
         {children}
       </Text>
-    </NBView>
+    </RencengView>
   );
 };
 
@@ -67,35 +65,33 @@ const App = () => {
   };
 
   return (
-    <NBProvider>
-      <SafeAreaView style={backgroundStyle}>
-        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={backgroundStyle}>
-          <Header />
-          <NBView
-            style={{
-              backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            }}>
-            <Section title="Step One">
-              Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-              screen and then come back to see your edits.
-            </Section>
-            <Section title="See Your Changes">
-              <ReloadInstructions />
-            </Section>
-            <Section title="Debug">
-              <DebugInstructions />
-            </Section>
-            <Section title="Learn More">
-              Read the docs to discover what to do next:
-            </Section>
-            <LearnMoreLinks />
-          </NBView>
-        </ScrollView>
-      </SafeAreaView>
-    </NBProvider>
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={backgroundStyle}>
+        <Header />
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+          }}>
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+            screen and then come back to see your edits.
+          </Section>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
+          </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
