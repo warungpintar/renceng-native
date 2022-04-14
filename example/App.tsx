@@ -19,6 +19,8 @@ import {
   View,
 } from 'react-native';
 
+import { View as RencengView } from 'renceng-native';
+
 import {
   Colors,
   DebugInstructions,
@@ -32,7 +34,7 @@ const Section: React.FC<{
 }> = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View style={styles.sectionContainer}>
+    <RencengView style={styles.sectionContainer} bg="green" borderRadius={8}>
       <Text
         style={[
           styles.sectionTitle,
@@ -51,7 +53,7 @@ const Section: React.FC<{
         ]}>
         {children}
       </Text>
-    </View>
+    </RencengView>
   );
 };
 

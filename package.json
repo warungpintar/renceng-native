@@ -4,8 +4,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
@@ -19,7 +18,10 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-native": "^0.64.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -37,19 +39,31 @@
   "size-limit": [
     {
       "path": "dist/renceng-native.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "30 KB"
     },
     {
       "path": "dist/renceng-native.esm.js",
-      "limit": "10 KB"
+      "limit": "30 KB"
     }
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
+    "@types/react": "^17.0.3",
+    "@types/react-native": "^0.64.2",
     "husky": "^7.0.4",
+    "react": "^16.8.6",
+    "react-native": "^0.64.0",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@emotion/native": "^11.0.0",
+    "@emotion/react": "^11.9.0",
+    "@types/styled-system": "^5.1.15",
+    "emotion-theming": "^10.0.19",
+    "react": "^16.8.6",
+    "styled-system": "^5.1.2"
   }
 }

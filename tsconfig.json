@@ -2,6 +2,12 @@
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
   "include": ["src", "types"],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "renceng-native": [
+        "./src"
+      ]
+    },
     "module": "esnext",
     "lib": ["dom", "esnext"],
     "importHelpers": true,
