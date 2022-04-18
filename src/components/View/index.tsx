@@ -29,7 +29,16 @@ export type ViewProps = SpaceProps &
   BorderProps &
   PositionProps &
   ShadowProps &
-  RNViewProps;
+  RNViewProps & {
+    shadowColor?: string;
+    shadowOffset?: {
+      width: number;
+      height: number;
+    },
+    shadowOpacity?: number;
+    shadowRadius?: number;
+    elevation?: number;
+  }
 
 const View = (props: ViewProps) => {
   const BaseView = styled(RNView)<ViewProps>`
