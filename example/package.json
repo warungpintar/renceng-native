@@ -8,11 +8,15 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "local": "yarn add --force file:..",
+    "fix-dependency": "rm -rf node_modules/renceng-native/node_modules/react",
+    "update": "yarn local && yarn fix-dependency && yarn update-stories"
   },
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.67.3",
     "renceng-native": "file:../../renceng-native"
+    "renceng-native": "file:.."
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
