@@ -17,46 +17,25 @@ renceng-native is an implementation of Renceng Design Language System for react-
 ```
 ## How to run
 
-### Install & build main package
+Build main package
 
 ```bash
 $ yarn install && build
 ```
 
-### Install yalc
-> renceng-native use yalc to manage local dependency
-```bash
-$ yarn global add yalc
-```
-or
-```bash
-$ npm i yalc -g
-```
-
-### Publish local build
-```bash
-$ yarn publish:local
-```
-
-### Update local dependency
+Install example apps
 
 ```bash
-$ cd example && yarn fetch:local
+$ cd example && yarn install && fix-dependency
 ```
 
-### Install storybook
-
-```bash
-$ cd example && yarn install
-```
-
-### Run web storybook
+Run web storybook
 
 ```bash
 $ yarn storybook
 ```
 
-### Run react-native storybook
+Run react-native storybook
 > Make sure to run emulator first
 
 ```bash
@@ -64,14 +43,14 @@ $ yarn android
 ```
 
 ## How to develop new component
-### Go to root package (renceng-native/*here*)
+Go to root package (renceng-native/*here*)
 
-### Create new component under
+Create new component under
 ```txt
 /src/components
 ```
 
-### Build package with
+Build package with
 ```bash
 $ yarn build
 ```
@@ -81,20 +60,15 @@ or you can use this to build package everytime a change occurs
 $ yarn start
 ```
 
-### Publish local build
-```bash
-$ yarn publish:local
-```
-
-### To test out new component, go to example apps
+To test out new component, go to example apps
 ```bash
 $ cd example
 ```
 
-### Update renceng-native
+Update renceng-native
 > Example apps is using local dependency for renceng-native, hence this script is needed everytime you want to try out new renceng-native build 
 ```bash
-$ yarn fetch:local
+$ yarn update
 ```
 
 ## How to contribute

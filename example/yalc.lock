@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "renceng-native": {
+      "signature": "ea4ded8a7fd3315460890573ff9c8c02",
+      "file": true
+    }
+  }
+}
