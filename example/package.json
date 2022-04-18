@@ -13,9 +13,7 @@
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
     "storybook": "start-storybook -p 6660",
     "build-storybook": "build-storybook",
-    "local": "yarn add --force file:..",
-    "fix-dependency": "rm -rf node_modules/renceng-native/node_modules/react",
-    "update": "yarn local && yarn fix-dependency && yarn update-stories"
+    "fetch:local": "yalc update renceng-native"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.3",

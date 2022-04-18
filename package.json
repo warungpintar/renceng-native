@@ -16,7 +16,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "publish:local": "yalc publish"
   },
   "peerDependencies": {
     "react": "^16.8.6",
