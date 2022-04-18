@@ -21,7 +21,7 @@ import {
 } from 'styled-system';
 import styled from '@emotion/native';
 
-type ViewProps = SpaceProps &
+export type ViewProps = SpaceProps &
   ColorProps &
   LayoutProps &
   GridProps &
