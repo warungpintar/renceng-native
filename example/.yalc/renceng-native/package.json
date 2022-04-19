@@ -15,7 +15,8 @@
     "test": "tsdx test",
     "lint": "tsdx lint",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "publish:local": "yalc publish"
   },
   "peerDependencies": {
     "react": "^16.8.6",
@@ -53,5 +54,5 @@
     "react": "^16.8.6",
     "styled-system": "^5.1.2"
   },
-  "yalcSig": "ea4ded8a7fd3315460890573ff9c8c02"
+  "yalcSig": "8a0a80b6ac2504c57478a610c4e8e4de"
 }

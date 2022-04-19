@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View basic 1`] = `
+<View
+  bg="white"
+  borderColor="black"
+  borderStyle="solid"
+  borderWidth={1}
+  height={100}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderColor": "black",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "height": 100,
+        "width": 200,
+      },
+      undefined,
+    ]
+  }
+  testID="my-view"
+  width={200}
+>
+   
+</View>
+`;
