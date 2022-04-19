@@ -41,6 +41,7 @@
     "@storybook/react": "6.3",
     "@storybook/react-native": "^6.0.1-beta.5",
     "@storybook/testing-library": "^0.0.9",
+    "@testing-library/react-native": "^9.1.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.67.3",
     "@types/react-test-renderer": "^17.0.1",

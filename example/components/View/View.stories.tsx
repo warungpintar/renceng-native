@@ -45,7 +45,6 @@ Shadow.args = {
   },
   shadowOpacity: 0.5,
   shadowRadius: 8,
-
   elevation: 8,
 };
 
