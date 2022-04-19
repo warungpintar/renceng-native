@@ -26,3 +26,90 @@ exports[`View basic 1`] = `
    
 </View>
 `;
+
+exports[`View color 1`] = `
+<View
+  bg="#FECF28"
+  borderColor="black"
+  borderStyle="solid"
+  borderWidth={1}
+  height={100}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "black",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "height": 100,
+        "width": 200,
+      },
+      undefined,
+    ]
+  }
+  testID="my-view"
+  width={200}
+>
+   
+</View>
+`;
+
+exports[`View rounded 1`] = `
+<View
+  bg="white"
+  borderColor="black"
+  borderRadius={8}
+  borderStyle="solid"
+  borderWidth={1}
+  height={100}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderColor": "black",
+        "borderRadius": 8,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "height": 100,
+        "width": 200,
+      },
+      undefined,
+    ]
+  }
+  testID="my-view"
+  width={200}
+>
+   
+</View>
+`;
+
+exports[`View shadow 1`] = `
+<View
+  bg="white"
+  elevation={8}
+  height={100}
+  shadowColor="black"
+  shadowOffset={
+    Object {
+      "height": 8,
+      "width": 4,
+    }
+  }
+  shadowOpacity={0.5}
+  shadowRadius={8}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "height": 100,
+        "width": 200,
+      },
+      undefined,
+    ]
+  }
+  testID="my-view"
+  width={200}
+>
+   
+</View>
+`;
