@@ -98,7 +98,7 @@ $ yarn fetch:local
 ```
 
 ## How to contribute
-Create new branch from master using
+Create new branch from development using
 ```txt
 feat/branch-name for feature branch
 fix/branch-name for fix branch
@@ -106,7 +106,7 @@ chore/branch-name for chore branch
 ```
 Develop using above guidelines
 
-Create pull request to master
+Create pull request to development
 
 Create new issue in Issues if you find any issue/bug
 
