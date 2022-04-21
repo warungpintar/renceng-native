@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider Color 1`] = `[Function]`;
+
+exports[`Divider Dashed 1`] = `[Function]`;
+
+exports[`Divider Solid 1`] = `[Function]`;
+
+exports[`Divider Width 1`] = `[Function]`;
+
+exports[`Divider basic, should render without props 1`] = `[Function]`;

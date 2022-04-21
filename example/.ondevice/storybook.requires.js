@@ -27,7 +27,10 @@ if (parameters) {
 argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
 
 const getStories = () => {
-  return [require("../components/View/View.stories.tsx")];
+  return [
+    require("../components/Divider/Divider.stories.tsx"),
+    require("../components/View/View.stories.tsx"),
+  ];
 };
 
 configure(getStories, module, false);
