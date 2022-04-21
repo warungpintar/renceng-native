@@ -146,7 +146,7 @@ Create new issue in Issues if you find any issue/bug
 - [ ] Button component
 - [ ] Image component
 - [ ] Icon component
-- [ ] Divider
+- [x] Divider
 - [ ] ...
 - [ ] Publish to npm
 - [ ] Deploy storybook web
