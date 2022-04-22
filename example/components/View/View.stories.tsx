@@ -1,13 +1,35 @@
 import React from 'react';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
 import {View} from 'renceng-native';
+import {
+  ShowcaseSection,
+  ShowcaseItem,
+  Showcase,
+} from '../../components/Showcase';
 
 export default {
   title: 'components/View',
   component: View,
 } as ComponentMeta<typeof View>;
 
-export const Basic: ComponentStory<typeof View> = args => <View {...args} />;
+export const Basic: ComponentStory<typeof View> = args => (
+  <Showcase>
+    <ShowcaseSection title="View" subtitle="Basic" propsName="basic">
+      <ShowcaseItem title={'large'}>
+        <View {...args} width={300} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'medium'}>
+        <View {...args} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'small'}>
+        <View {...args} width={100} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'extra small'}>
+        <View {...args} width={50} />
+      </ShowcaseItem>
+    </ShowcaseSection>
+  </Showcase>
+);
 
 export const Rounded: ComponentStory<typeof View> = args => <View {...args} />;
 
