@@ -17,7 +17,7 @@ export const Basic: ComponentStory<typeof Icon> = args => (
   <Showcase>
     <ShowcaseSection title="Icon" subtitle="Outline">
       <ShowcaseItem title={'small'}>
-        <Icon {...args} size={16} />
+        <Icon {...args} />
       </ShowcaseItem>
       <ShowcaseItem title={'medium'}>
         <Icon {...args} size={32} />
@@ -33,7 +33,7 @@ export const Outline: ComponentStory<typeof Icon> = args => (
   <Showcase>
     <ShowcaseSection title="Icon" subtitle="Outline">
       <ShowcaseItem title={'small'}>
-        <Icon {...args} size={16} />
+        <Icon {...args} />
       </ShowcaseItem>
       <ShowcaseItem title={'medium'}>
         <Icon {...args} size={32} />
@@ -49,7 +49,7 @@ export const Color: ComponentStory<typeof Icon> = args => (
   <Showcase>
     <ShowcaseSection title="Icon" subtitle="Outline">
       <ShowcaseItem title={'small'}>
-        <Icon {...args} size={16} />
+        <Icon {...args} />
       </ShowcaseItem>
       <ShowcaseItem title={'medium'}>
         <Icon {...args} size={32} />
@@ -63,16 +63,16 @@ export const Color: ComponentStory<typeof Icon> = args => (
 
 Basic.args = {
   name: 'car',
-  size: 16
+  size: 16,
 };
 
 Outline.args = {
   name: 'car-outline',
-  size: 16
+  size: 16,
 };
 
 Color.args = {
   name: 'car',
   size: 16,
-  color: '#FECF28'
+  color: '#FECF28',
 };
