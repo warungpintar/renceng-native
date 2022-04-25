@@ -40,11 +40,11 @@
   "size-limit": [
     {
       "path": "dist/renceng-native.cjs.production.min.js",
-      "limit": "30 KB"
+      "limit": "300 KB"
     },
     {
       "path": "dist/renceng-native.esm.js",
-      "limit": "30 KB"
+      "limit": "300 KB"
     }
   ],
   "devDependencies": {
