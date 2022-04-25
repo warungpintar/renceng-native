@@ -15,7 +15,7 @@ export default {
 
 export const Basic: ComponentStory<typeof Icon> = args => (
   <Showcase>
-    <ShowcaseSection title="Icon" subtitle="Outline">
+    <ShowcaseSection title="Icon" subtitle="Basic">
       <ShowcaseItem title={'small'}>
         <Icon {...args} />
       </ShowcaseItem>
@@ -47,7 +47,7 @@ export const Outline: ComponentStory<typeof Icon> = args => (
 
 export const Color: ComponentStory<typeof Icon> = args => (
   <Showcase>
-    <ShowcaseSection title="Icon" subtitle="Outline">
+    <ShowcaseSection title="Icon" subtitle="Color">
       <ShowcaseItem title={'small'}>
         <Icon {...args} />
       </ShowcaseItem>
