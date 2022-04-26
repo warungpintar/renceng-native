@@ -142,7 +142,7 @@ Create new issue in Issues if you find any issue/bug
 - [x] Storybook react-native
 - [x] Storybook web
 - [x] View component
-- [ ] Text component
+- [x] Text component
 - [ ] Button component
 - [ ] Image component
 - [x] Icon component
