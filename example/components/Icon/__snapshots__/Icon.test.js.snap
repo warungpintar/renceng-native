@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should render correctly with basic icon 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+      ],
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={16}
+    bbWidth={16}
+    fill="black"
+    focusable={false}
+    height={16}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": 16,
+          "width": 16,
+        },
+      ]
+    }
+    testID="my-icon"
+    vbHeight={24}
+    vbWidth={24}
+    width={16}
+  >
+    <RNSVGGroup
+      fill={4278190080}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGGroup>
+        <RNSVGGroup>
+          <RNSVGRect
+            height="24"
+            opacity={0}
+            width="24"
+            x={0}
+            y={0}
+          />
+          <RNSVGPath
+            d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm12 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+          />
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Icon should render correctly with color icon 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+      ],
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={16}
+    bbWidth={16}
+    fill="#FECF28"
+    focusable={false}
+    height={16}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": 16,
+          "width": 16,
+        },
+      ]
+    }
+    testID="my-icon"
+    vbHeight={24}
+    vbWidth={24}
+    width={16}
+  >
+    <RNSVGGroup
+      fill={4294889256}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGGroup>
+        <RNSVGGroup>
+          <RNSVGRect
+            height="24"
+            opacity={0}
+            width="24"
+            x={0}
+            y={0}
+          />
+          <RNSVGPath
+            d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm5-3H4V5h11v10zm7 3a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+          />
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`Icon should render correctly with outline icon 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "transform": Array [
+        Object {
+          "scale": 1,
+        },
+      ],
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={16}
+    bbWidth={16}
+    fill="black"
+    focusable={false}
+    height={16}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": 16,
+          "width": 16,
+        },
+      ]
+    }
+    testID="my-icon"
+    vbHeight={24}
+    vbWidth={24}
+    width={16}
+  >
+    <RNSVGGroup
+      fill={4278190080}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGGroup>
+        <RNSVGGroup>
+          <RNSVGRect
+            height="24"
+            opacity={0}
+            width="24"
+            x={0}
+            y={0}
+          />
+          <RNSVGPath
+            d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm5-3H4V5h11v10zm7 3a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+          />
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;

@@ -145,7 +145,7 @@ Create new issue in Issues if you find any issue/bug
 - [ ] Text component
 - [ ] Button component
 - [ ] Image component
-- [ ] Icon component
+- [x] Icon component
 - [x] Divider
 - [ ] ...
 - [ ] Publish to npm
