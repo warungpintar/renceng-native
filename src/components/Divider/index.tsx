@@ -1,12 +1,29 @@
 import React from 'react';
 import { View as RNView, ViewProps as RNViewProps } from 'react-native';
 
-import { space, SpaceProps, border, BorderProps } from 'styled-system';
+import {
+  space,
+  SpaceProps,
+  border,
+  BorderProps,
+  BorderStyleProps,
+} from 'styled-system';
 import styled from '@emotion/native';
 
-export type DividerProps = SpaceProps & BorderProps & RNViewProps;
+export type DividerProps = SpaceProps &
+  BorderProps &
+  RNViewProps & {
+    size?: number;
+    color?: string;
+    type?: BorderStyleProps['borderStyle'];
+  };
 
-const Divider = ({ size = 1, color = 'black', type = 'solid', ...props }) => {
+const Divider = ({
+  size = 1,
+  color = 'black',
+  type = 'solid',
+  ...props
+}: DividerProps) => {
   const BaseView = styled(RNView)<DividerProps>`
     ${space}
     ${border}
