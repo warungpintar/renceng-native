@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text align 1`] = `
+<Text
+  color="black"
+  style={
+    Array [
+      Object {
+        "color": "black",
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+  testID="my-text"
+  textAlign="left"
+>
+  Text Content
+</Text>
+`;
+
+exports[`Text basic 1`] = `
+<Text
+  color="black"
+  fontSize={12}
+  style={
+    Array [
+      Object {
+        "color": "black",
+        "fontSize": 12,
+      },
+      undefined,
+    ]
+  }
+  testID="my-text"
+>
+  Text Content
+</Text>
+`;
+
+exports[`Text category 1`] = `
+<Text
+  category="md"
+  color="black"
+  style={
+    Array [
+      Object {
+        "color": "black",
+        "fontSize": 14,
+      },
+      undefined,
+    ]
+  }
+  testID="my-text"
+>
+  Text Content
+</Text>
+`;
+
+exports[`Text color 1`] = `
+<Text
+  color="#FECF28"
+  style={
+    Array [
+      Object {
+        "color": "#FECF28",
+      },
+      undefined,
+    ]
+  }
+  testID="my-text"
+>
+  Text Content
+</Text>
+`;

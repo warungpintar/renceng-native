@@ -44,10 +44,10 @@ $ npm i yalc -g
 $ yarn publish:local
 ```
 
-### Update local dependency
+### Install renceng-native with local dependency
 
 ```bash
-$ cd example && yarn fetch:local
+$ cd example && yarn add:local
 ```
 
 ### Install storybook
@@ -142,7 +142,7 @@ Create new issue in Issues if you find any issue/bug
 - [x] Storybook react-native
 - [x] Storybook web
 - [x] View component
-- [ ] Text component
+- [x] Text component
 - [ ] Button component
 - [ ] Image component
 - [x] Icon component
