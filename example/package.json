@@ -13,6 +13,7 @@
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
     "storybook": "start-storybook -p 6660",
     "build-storybook": "build-storybook",
+    "add:local": "yalc add renceng-native",
     "fetch:local": "yalc update renceng-native"
   },
   "dependencies": {
