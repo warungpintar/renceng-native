@@ -9,15 +9,20 @@ export type IconProps = EvaIconProps & {
   color?: string;
 };
 
-const Icon = ({ size = 24, color = 'black', ...props }: IconProps) => {
+const Icon = (props: IconProps) => {
   const usedProps = {
-    width: size,
-    height: size,
-    fill: color,
+    width: props.size,
+    height: props.size,
+    fill: props.color,
     ...props,
   };
 
   return <EvaIcon {...usedProps} />;
+};
+
+Icon.defaultProps = {
+  size: 24,
+  color: 'black',
 };
 
 export default Icon;

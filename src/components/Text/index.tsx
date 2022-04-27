@@ -23,17 +23,16 @@ export type TextProps = TypographyProps &
     color?: string;
   };
 
-const Text = ({ color = 'black', ...props }: TextProps) => {
+const Text = (props: TextProps) => {
   const BaseText = styled(RNText)<TextProps>(
     compose(typography, space, colorSystem, flex, Variants.TextCategory)
   );
 
-  const usedProps = {
-    color,
-    ...props,
-  };
+  return <BaseText {...props} />;
+};
 
-  return <BaseText {...usedProps} />;
+Text.defaultProps = {
+  color: 'black',
 };
 
 export default Text;
