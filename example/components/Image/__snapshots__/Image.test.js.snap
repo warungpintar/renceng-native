@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image sould match snapshot 1`] = `
+<Image
+  height={200}
+  resizeMode="contain"
+  source={
+    Object {
+      "testUri": "../../../components/Image/assets/images/WP.png",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "height": 200,
+        "width": 200,
+      },
+      undefined,
+    ]
+  }
+  testID="myImage"
+  width={200}
+  withProxy={false}
+/>
+`;
