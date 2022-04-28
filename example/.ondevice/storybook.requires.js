@@ -30,6 +30,7 @@ const getStories = () => {
   return [
     require("../components/Divider/Divider.stories.tsx"),
     require("../components/Icon/Icon.stories.tsx"),
+    require("../components/Image/Image.stories.tsx"),
     require("../components/Text/Text.stories.tsx"),
     require("../components/View/View.stories.tsx"),
   ];
