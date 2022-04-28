@@ -8,8 +8,8 @@ import {
   BorderProps,
 } from 'styled-system';
 import styled from '@emotion/native';
-import {Image as RNImage, ImageProps as RNImageProps} from 'react-native';
-import {getImageProxy} from '../../utils/ImageProxy';
+import { Image as RNImage, ImageProps as RNImageProps } from 'react-native';
+import { getImageProxy } from '../../utils/ImageProxy';
 
 export declare type ResizeMode = 'contain' | 'cover' | 'stretch' | 'center';
 
