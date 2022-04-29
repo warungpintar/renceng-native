@@ -56,22 +56,6 @@ export const LocalPath: ComponentStory<typeof Image> = args => (
   </Showcase>
 );
 
-export const WithProxy: ComponentStory<typeof Image> = args => (
-  <Showcase>
-    <ShowcaseSection title="Image" subtitle="Image with Proxy">
-      <ShowcaseItem title={'small'}>
-        <Image {...args} width={200} height={200} />
-      </ShowcaseItem>
-      <ShowcaseItem title={'medium'}>
-        <Image {...args} width={300} height={300} />
-      </ShowcaseItem>
-      <ShowcaseItem title={'large'}>
-        <Image {...args} width={400} height={400} />
-      </ShowcaseItem>
-    </ShowcaseSection>
-  </Showcase>
-);
-
 export const WithBorder: ComponentStory<typeof Image> = args => (
   <Showcase>
     <ShowcaseSection title="Image" subtitle="Image with Border">
@@ -94,7 +78,14 @@ export const WithBorder: ComponentStory<typeof Image> = args => (
         />
       </ShowcaseItem>
       <ShowcaseItem title={'radius'}>
-        <Image {...args} width={400} height={200} borderRadius={60} />
+        <Image
+          {...args}
+          width={400}
+          height={200}
+          borderWidth={4}
+          borderColor="blue"
+          borderRadius={60}
+        />
       </ShowcaseItem>
     </ShowcaseSection>
   </Showcase>
@@ -111,15 +102,9 @@ LocalPath.args = {
   source: require('../Image/assets/images/WP.png'),
 };
 
-WithProxy.args = {
+WithBorder.args = {
   source: {
     uri:
       'https://storage.googleapis.com/kanjuro-wa-sticker/sticker-pack-1/108733448_947616079049479_945714156152963291_n.png',
   },
-  withProxy: true,
-};
-
-WithBorder.args = {
-  source: require('../Image/assets/images/WP.png'),
-  resizeMode: 'stretch',
 };
