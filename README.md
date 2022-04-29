@@ -144,7 +144,7 @@ Create new issue in Issues if you find any issue/bug
 - [x] View component
 - [x] Text component
 - [ ] Button component
-- [ ] Image component
+- [x] Image component
 - [x] Icon component
 - [x] Divider
 - [ ] ...
