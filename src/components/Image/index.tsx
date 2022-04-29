@@ -9,7 +9,6 @@ import {
 } from 'styled-system';
 import styled from '@emotion/native';
 import { Image as RNImage, ImageProps as RNImageProps } from 'react-native';
-import { getImageProxy } from '../../utils/ImageProxy';
 
 export declare type ResizeMode = 'contain' | 'cover' | 'stretch' | 'center';
 
@@ -37,20 +36,6 @@ const Image = (props: ImageProps) => {
     resizeMode: props.resizeMode,
     ...props,
   };
-
-  if (props.withProxy && props.source.uri) {
-    return (
-      <ImageView
-        {...usedProps}
-        source={{
-          uri: getImageProxy(props.source.uri, {
-            height: props.height,
-            width: props.width,
-          }),
-        }}
-      />
-    );
-  }
 
   return <ImageView {...usedProps} />;
 };
