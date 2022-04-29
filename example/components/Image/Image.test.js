@@ -41,30 +41,6 @@ describe('Image', () => {
     expect(properties.height).toBe(200);
   });
 
-  test('should render correctly with proxy Image', () => {
-    const props = {
-      testID: 'myImage',
-      source: {
-        uri:
-          'https://storage.googleapis.com/kanjuro-wa-sticker/sticker-pack-1/108733448_947616079049479_945714156152963291_n.png',
-      },
-      withProxy: true,
-      height: 200,
-      width: 200,
-    };
-    const {queryByTestId} = render(<Image {...props} />);
-    const properties = queryByTestId('myImage').props;
-    expect(properties.source.uri).toBeTruthy();
-    expect(properties.withProxy).toBeTruthy();
-    expect(typeof properties.source === 'object').toBeTruthy();
-    expect(typeof properties.source.uri).toBe('string');
-    expect(
-      properties.source.uri.includes('https://imgproxy.warungpintar.co'),
-    ).toBeTruthy();
-    expect(properties.width).toBe(200);
-    expect(properties.height).toBe(200);
-  });
-
   test('sould match snapshot', () => {
     const props = {
       testID: 'myImage',
