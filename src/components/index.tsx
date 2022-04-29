@@ -9,3 +9,6 @@ export * from './Icon';
 
 export { default as Text } from './Text';
 export * from './Text';
+
+export { default as Image } from './Image';
+export * from './Image';
