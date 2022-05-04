@@ -1,0 +1,661 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button in disabled/inactive state doesn't fire event on press 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#E8E8E8",
+        "borderColor": "#E8E8E8",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#737373",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myDisabledButton"
+  variant="disabled"
+>
+  <Text
+    color="#737373"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#737373",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#E8E8E8",
+        "borderColor": "#E8E8E8",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#737373",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myDisabledButton"
+  variant="disabled"
+>
+  <Text
+    color="#737373"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#737373",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button in disabled/inactive state shows correct color when disabled 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#E8E8E8",
+        "borderColor": "#E8E8E8",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#737373",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myDisabledButton"
+  variant="disabled"
+>
+  <Text
+    color="#737373"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#737373",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use size props correctly fires the assigned event on press 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="lg"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 16,
+        "paddingBottom": 20,
+        "paddingLeft": 36,
+        "paddingRight": 36,
+        "paddingTop": 20,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={16}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 16,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use size props correctly outputs correct title/text 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="lg"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 16,
+        "paddingBottom": 20,
+        "paddingLeft": 36,
+        "paddingRight": 36,
+        "paddingTop": 20,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={16}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 16,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use size props correctly renders primary variant and large size correctly 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="lg"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 16,
+        "paddingBottom": 20,
+        "paddingLeft": 36,
+        "paddingRight": 36,
+        "paddingTop": 20,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={16}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 16,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use size props correctly renders successfully 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="lg"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 16,
+        "paddingBottom": 20,
+        "paddingLeft": 36,
+        "paddingRight": 36,
+        "paddingTop": 20,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={16}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 16,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use variant props fires the assigned event on press 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use variant props outputs correct title/text 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use variant props renders primary variant correctly 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
+
+exports[`Button use variant props renders successfully 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myPrimaryButton"
+  variant="primary"
+>
+  <Text
+    color="#161616"
+    fontSize={14}
+    fontWeight="600"
+    style={
+      Array [
+        Object {
+          "color": "#161616",
+          "fontSize": 14,
+          "fontWeight": "600",
+        },
+        undefined,
+      ]
+    }
+  >
+    My Button
+  </Text>
+</View>
+`;
