@@ -2,7 +2,7 @@ import React from 'react';
 import {fireEvent, render, waitFor} from '@testing-library/react-native';
 import {Button, Variants} from 'renceng-native';
 
-const {ButtonVariants} = Variants;
+const {ButtonVariants, ButtonSizes} = Variants;
 
 describe('Button', () => {
   describe('use variant props', () => {
@@ -39,7 +39,9 @@ describe('Button', () => {
       const {queryByTestId, toJSON} = render(<Button {...primaryProps} />);
       const btnProps = queryByTestId('myPrimaryButton').props;
 
-      expect(btnProps.style?.[0]?.backgroundColor).toMatch('#FECF28');
+      expect(btnProps.style?.[0]?.backgroundColor).toMatch(
+        ButtonVariants.variants.primary.bg,
+      );
       expect(toJSON()).toMatchSnapshot();
     });
 
@@ -137,6 +139,98 @@ describe('Button', () => {
       expect(btnProps.style?.[0]?.backgroundColor).toMatch(
         ButtonVariants.variants.disabled.bg,
       );
+      expect(toJSON()).toMatchSnapshot();
+    });
+  });
+
+  describe('with icon', () => {
+    const mockFn = jest.fn(() => null);
+    const iconProps = {
+      testID: 'myIconButton',
+      variant: 'primary',
+      size: 'md',
+      title: 'My Button',
+      onPress: mockFn,
+      icon: 'car',
+      iconPosition: 'left',
+    };
+
+    it('renders icon component', () => {
+      const {queryAllByTestId, toJSON} = render(<Button {...iconProps} />);
+      const iconElement = queryAllByTestId('btnIconLeft');
+
+      expect(iconElement.length).toBe(1);
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it("shouldn't render icon component if icon property is empty", () => {
+      const noIconProps = {
+        testID: 'noIconButton',
+        variant: 'primary',
+        size: 'md',
+        title: 'My Button',
+        onPress: mockFn,
+      };
+      const {queryAllByTestId, toJSON} = render(<Button {...noIconProps} />);
+      const iconElement = queryAllByTestId('btnIconLeft');
+
+      expect(iconElement.length).toBe(0);
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('renders icon component on the right side of button', () => {
+      const rightIconProps = {
+        testID: 'myIconButton',
+        variant: 'primary',
+        size: 'md',
+        title: 'My Button',
+        onPress: mockFn,
+        icon: 'car',
+        iconPosition: 'right',
+      };
+      const {queryAllByTestId, toJSON} = render(<Button {...rightIconProps} />);
+      const leftIconElement = queryAllByTestId('btnIconLeft');
+      const rightIconElement = queryAllByTestId('btnIconRight');
+
+      expect(leftIconElement.length).toBe(0);
+      expect(rightIconElement.length).toBe(1);
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should follow the default fontSize & color of the respective button', () => {
+      const {getByTestId, toJSON} = render(<Button {...iconProps} />);
+      const iconElement = getByTestId('btnIconLeft');
+
+      expect(iconElement.props.size).toBe(ButtonSizes.variants.md.fontSize);
+      expect(iconElement.props.fill).toMatch(
+        ButtonVariants.variants.primary.color,
+      );
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should dynamically change the icon size if iconSize property is passed', () => {
+      const myIconProps = {
+        testID: 'myIconButton',
+        variant: 'primary',
+        size: 'md',
+        title: 'My Button',
+        onPress: mockFn,
+        icon: 'car',
+        iconPosition: 'left',
+        iconSize: 32,
+      };
+      const {getByTestId, toJSON} = render(<Button {...myIconProps} />);
+
+      const iconElement = getByTestId('btnIconLeft');
+      expect(iconElement.props.size).toBe(32);
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('renders successfully', () => {
+      const activeButton = render(<Button {...iconProps} />);
+      const {toJSON} = activeButton;
+
+      expect(activeButton).toBeDefined();
       expect(toJSON()).toMatchSnapshot();
     });
   });
