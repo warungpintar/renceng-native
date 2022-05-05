@@ -42,7 +42,7 @@ export default {
         type: 'number',
         min: 0,
         max: 30,
-        setp: 1,
+        step: 1,
       },
     },
   },

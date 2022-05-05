@@ -41,7 +41,8 @@ export type ButtonProps = {
   disabled?: boolean;
   icon?: string;
   iconPosition?: 'left' | 'right';
-  iconSize?: number; // Default will follows button's fontSize but also dynamically applicable
+  /** Default will follows button's fontSize but also dynamically applicable */
+  iconSize?: number;
 } & BaseProps &
   SpaceProps &
   BorderProps &
