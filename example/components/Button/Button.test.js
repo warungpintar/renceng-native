@@ -1,6 +1,8 @@
 import React from 'react';
 import {fireEvent, render, waitFor} from '@testing-library/react-native';
-import {Button} from 'renceng-native';
+import {Button, Variants} from 'renceng-native';
+
+const {ButtonVariants} = Variants;
 
 describe('Button', () => {
   describe('use variant props', () => {
@@ -81,7 +83,9 @@ describe('Button', () => {
       const {queryByTestId, toJSON} = render(<Button {...primaryProps} />);
       const btnProps = queryByTestId('myPrimaryButton').props;
 
-      expect(btnProps.style?.[0]?.backgroundColor).toMatch('#FECF28');
+      expect(btnProps.style?.[0]?.backgroundColor).toMatch(
+        ButtonVariants.variants.primary.bg,
+      );
       expect(btnProps.style?.[0]?.fontSize).toBe(16);
       expect(btnProps.style?.[0]?.paddingTop).toBe(20);
       expect(btnProps.style?.[0]?.paddingBottom).toBe(20);
@@ -130,7 +134,9 @@ describe('Button', () => {
       const {queryByTestId, toJSON} = render(<Button {...disabledProps} />);
       const btnProps = queryByTestId('myDisabledButton').props;
 
-      expect(btnProps.style?.[0]?.backgroundColor).toMatch('#E8E8E8');
+      expect(btnProps.style?.[0]?.backgroundColor).toMatch(
+        ButtonVariants.variants.disabled.bg,
+      );
       expect(toJSON()).toMatchSnapshot();
     });
   });

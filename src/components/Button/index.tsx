@@ -76,10 +76,10 @@ const Button = ({ variant, size, title, disabled, ...props }: ButtonProps) => {
 
   const usedProps = {
     variant: currentVariant,
-    size: size,
-    android_ripple: rippleConfig[variant],
+    size,
+    android_ripple: rippleConfig[currentVariant],
     android_disableSound: disabled,
-    disabled: disabled,
+    disabled,
     ...props,
   };
 
