@@ -108,7 +108,7 @@ const Button = ({
   /* NOTE: Works on on_device mode, doesn't work on storybook web view */
   if (isLoading) {
     const activitySize = (() => {
-      switch(size) {
+      switch (size) {
         case 'lg':
         case 'xl':
           return 'large';
