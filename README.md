@@ -104,6 +104,8 @@ $ yarn start
 
 ```bash
 $ yarn publish:local
+# or you can use
+$ ./update-local.sh
 ```
 
 ### To test out new component, go to example apps
@@ -118,6 +120,8 @@ $ cd example
 
 ```bash
 $ yarn fetch:local
+# or you can use
+$ ./update-local.sh
 ```
 
 ## How to contribute
@@ -143,7 +147,7 @@ Create new issue in Issues if you find any issue/bug
 - [x] Storybook web
 - [x] View component
 - [x] Text component
-- [ ] Button component
+- [x] Button component
 - [x] Image component
 - [x] Icon component
 - [x] Divider
