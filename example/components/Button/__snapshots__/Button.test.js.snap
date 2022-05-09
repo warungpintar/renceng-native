@@ -10,6 +10,7 @@ exports[`Button in disabled/inactive state doesn't fire event on press 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -40,23 +41,41 @@ exports[`Button in disabled/inactive state doesn't fire event on press 1`] = `
   testID="myDisabledButton"
   variant="disabled"
 >
-  <Text
-    color="#737373"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#737373",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#737373"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#737373",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -70,6 +89,7 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -100,23 +120,41 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
   testID="myDisabledButton"
   variant="disabled"
 >
-  <Text
-    color="#737373"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#737373",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#737373"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#737373",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -130,6 +168,7 @@ exports[`Button in disabled/inactive state shows correct color when disabled 1`]
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -160,23 +199,230 @@ exports[`Button in disabled/inactive state shows correct color when disabled 1`]
   testID="myDisabledButton"
   variant="disabled"
 >
-  <Text
-    color="#737373"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#737373",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#737373"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#737373",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button in loading state renders successfully 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myLoadingButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityHint="loading"
+      color="#161616"
+      size="small"
+    />
+  </View>
+</View>
+`;
+
+exports[`Button in loading state should be in disabled state and not triggering any action 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myLoadingButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityHint="loading"
+      color="#161616"
+      size="small"
+    />
+  </View>
+</View>
+`;
+
+exports[`Button in loading state should render loading spinner 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myLoadingButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityHint="loading"
+      color="#161616"
+      size="small"
+    />
+  </View>
 </View>
 `;
 
@@ -190,6 +436,7 @@ exports[`Button use size props correctly fires the assigned event on press 1`] =
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -220,23 +467,41 @@ exports[`Button use size props correctly fires the assigned event on press 1`] =
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={16}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 16,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={16}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -250,6 +515,7 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -280,23 +546,41 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={16}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 16,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={16}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -310,6 +594,7 @@ exports[`Button use size props correctly renders primary variant and large size 
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -340,23 +625,41 @@ exports[`Button use size props correctly renders primary variant and large size 
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={16}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 16,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={16}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -370,6 +673,7 @@ exports[`Button use size props correctly renders successfully 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -400,23 +704,41 @@ exports[`Button use size props correctly renders successfully 1`] = `
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={16}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 16,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={16}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -430,6 +752,7 @@ exports[`Button use variant props fires the assigned event on press 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -460,23 +783,41 @@ exports[`Button use variant props fires the assigned event on press 1`] = `
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -490,6 +831,7 @@ exports[`Button use variant props outputs correct title/text 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -520,23 +862,41 @@ exports[`Button use variant props outputs correct title/text 1`] = `
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -550,6 +910,7 @@ exports[`Button use variant props renders primary variant correctly 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -580,23 +941,41 @@ exports[`Button use variant props renders primary variant correctly 1`] = `
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;
 
@@ -610,6 +989,7 @@ exports[`Button use variant props renders successfully 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -640,22 +1020,854 @@ exports[`Button use variant props renders successfully 1`] = `
   testID="myPrimaryButton"
   variant="primary"
 >
-  <Text
-    color="#161616"
-    fontSize={14}
-    fontWeight="600"
+  <View
+    alignItems="center"
+    flexDirection="row"
     style={
       Array [
         Object {
-          "color": "#161616",
-          "fontSize": 14,
-          "fontWeight": "600",
+          "alignItems": "center",
+          "flexDirection": "row",
         },
         undefined,
       ]
     }
   >
-    My Button
-  </Text>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button with icon renders icon component 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myIconButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "transform": Array [
+            Object {
+              "scale": 1,
+            },
+          ],
+        }
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={14}
+        bbWidth={14}
+        color={4279637526}
+        fill="#161616"
+        focusable={false}
+        height={14}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        size={14}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 14,
+              "width": 14,
+            },
+          ]
+        }
+        testID="btnIconLeft"
+        tintColor={4279637526}
+        vbHeight={24}
+        vbWidth={24}
+        width={14}
+      >
+        <RNSVGGroup
+          fill={4279637526}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGRect
+                height="24"
+                opacity={0}
+                width="24"
+                x={0}
+                y={0}
+              />
+              <RNSVGPath
+                d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm12 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={2}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 8,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button with icon renders icon component on the right side of button 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myIconButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={2}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 8,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "transform": Array [
+            Object {
+              "scale": 1,
+            },
+          ],
+        }
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={14}
+        bbWidth={14}
+        color={4279637526}
+        fill="#161616"
+        focusable={false}
+        height={14}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        size={14}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 14,
+              "width": 14,
+            },
+          ]
+        }
+        testID="btnIconRight"
+        tintColor={4279637526}
+        vbHeight={24}
+        vbWidth={24}
+        width={14}
+      >
+        <RNSVGGroup
+          fill={4279637526}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGRect
+                height="24"
+                opacity={0}
+                width="24"
+                x={0}
+                y={0}
+              />
+              <RNSVGPath
+                d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm12 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button with icon renders successfully 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myIconButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "transform": Array [
+            Object {
+              "scale": 1,
+            },
+          ],
+        }
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={14}
+        bbWidth={14}
+        color={4279637526}
+        fill="#161616"
+        focusable={false}
+        height={14}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        size={14}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 14,
+              "width": 14,
+            },
+          ]
+        }
+        testID="btnIconLeft"
+        tintColor={4279637526}
+        vbHeight={24}
+        vbWidth={24}
+        width={14}
+      >
+        <RNSVGGroup
+          fill={4279637526}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGRect
+                height="24"
+                opacity={0}
+                width="24"
+                x={0}
+                y={0}
+              />
+              <RNSVGPath
+                d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm12 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={2}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 8,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button with icon should dynamically change the icon size if iconSize property is passed 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myIconButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "transform": Array [
+            Object {
+              "scale": 1,
+            },
+          ],
+        }
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={32}
+        bbWidth={32}
+        color={4279637526}
+        fill="#161616"
+        focusable={false}
+        height={32}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        size={32}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 32,
+              "width": 32,
+            },
+          ]
+        }
+        testID="btnIconLeft"
+        tintColor={4279637526}
+        vbHeight={24}
+        vbWidth={24}
+        width={32}
+      >
+        <RNSVGGroup
+          fill={4279637526}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGRect
+                height="24"
+                opacity={0}
+                width="24"
+                x={0}
+                y={0}
+              />
+              <RNSVGPath
+                d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm12 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={2}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 8,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button with icon should follow the default fontSize & color of the respective button 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myIconButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "transform": Array [
+            Object {
+              "scale": 1,
+            },
+          ],
+        }
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={14}
+        bbWidth={14}
+        color={4279637526}
+        fill="#161616"
+        focusable={false}
+        height={14}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        size={14}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "flex": 0,
+              "height": 14,
+              "width": 14,
+            },
+          ]
+        }
+        testID="btnIconLeft"
+        tintColor={4279637526}
+        vbHeight={24}
+        vbWidth={24}
+        width={14}
+      >
+        <RNSVGGroup
+          fill={4279637526}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGRect
+                height="24"
+                opacity={0}
+                width="24"
+                x={0}
+                y={0}
+              />
+              <RNSVGPath
+                d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88 3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78zM20 12.48V15h-3v-4.92zM7 18a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm12 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={2}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 8,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button with icon shouldn't render icon component if icon property is empty 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="noIconButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      color="#161616"
+      fontSize={14}
+      fontWeight="600"
+      ml={0}
+      mr={0}
+      style={
+        Array [
+          Object {
+            "color": "#161616",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "marginLeft": 0,
+            "marginRight": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      My Button
+    </Text>
+  </View>
 </View>
 `;

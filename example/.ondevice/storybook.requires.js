@@ -24,10 +24,7 @@ if (parameters) {
   addParameters(parameters);
 }
 
-// temporary fix for https://github.com/storybookjs/react-native/issues/327 whilst the issue is investigated
-try {
-  argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
-} catch {}
+argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
 
 const getStories = () => {
   return [

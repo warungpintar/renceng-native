@@ -1,4 +1,3 @@
-/* TODO: implement color constants & themes using ThemeProvider */
 import React from 'react';
 import {Button} from 'renceng-native';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
@@ -12,31 +11,43 @@ export default {
   title: 'components/Button',
   component: Button,
   argTypes: {
-    /* FIXME: this throws error on android storybook */
     variant: {
-      control: {
-        type: 'select',
-        options: [
-          'primary',
-          'blue',
-          'success',
-          'danger',
-          'outline',
-          'outline-blue',
-          'link',
-        ],
-      },
+      options: [
+        'primary',
+        'blue',
+        'success',
+        'danger',
+        'outline',
+        'outline-blue',
+        'link',
+      ],
+      control: {type: 'select'},
     },
     size: {
+      options: ['sm', 'md', 'lg', 'xl'],
+      control: {type: 'select'},
+    },
+    iconPosition: {
+      options: ['left', 'right'],
       control: {
-        type: 'select',
-        options: ['sm', 'md', 'lg', 'xl'],
+        type: 'radio',
+        labels: {
+          left: 'Left',
+          right: 'Right',
+        },
+      },
+    },
+    iconSize: {
+      control: {
+        type: 'number',
+        min: 0,
+        max: 30,
+        step: 1,
       },
     },
   },
 } as ComponentMeta<typeof Button>;
 
-/* TODO: Separates showcase for icons buttons */
 export const Default: ComponentStory<typeof Button> = args => (
   <Showcase>
     <ShowcaseSection title="Button" subtitle="Basic">
@@ -47,9 +58,30 @@ export const Default: ComponentStory<typeof Button> = args => (
   </Showcase>
 );
 
+export const Icon: ComponentStory<typeof Button> = args => (
+  <Showcase>
+    <ShowcaseSection title="Button" subtitle="with icon">
+      <ShowcaseItem title="Icon">
+        <Button {...args} />
+      </ShowcaseItem>
+    </ShowcaseSection>
+  </Showcase>
+);
+
+Icon.args = {
+  variant: 'primary',
+  size: 'md',
+  title: 'Button',
+  disabled: false,
+  icon: 'car', // TODO: Have selection for icons?
+  iconPosition: 'left',
+  iconSize: 16,
+};
+
 Default.args = {
   variant: 'primary',
   size: 'md',
   title: 'Button',
   disabled: false,
+  isLoading: false,
 };
