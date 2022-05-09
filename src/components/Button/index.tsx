@@ -9,6 +9,7 @@ import {
   TextProps,
   Pressable as Base,
   PressableProps as BaseProps,
+  ActivityIndicator,
 } from 'react-native';
 import {
   compose,
@@ -43,6 +44,7 @@ export type ButtonProps = {
   iconPosition?: 'left' | 'right';
   /** Default will follows button's fontSize but also dynamically applicable */
   iconSize?: number;
+  isLoading?: boolean;
 } & BaseProps &
   SpaceProps &
   BorderProps &
@@ -74,6 +76,7 @@ const Button = ({
   icon,
   iconPosition,
   iconSize,
+  isLoading,
   ...props
 }: ButtonProps) => {
   const currentVariant = (() => {
@@ -98,8 +101,42 @@ const Button = ({
     android_ripple: rippleConfig[currentVariant],
     android_disableSound: disabled,
     disabled,
+    isLoading,
     ...props,
   };
+
+  /* NOTE: Works on on_device mode, doesn't work on storybook web view */
+  if (isLoading) {
+    const activitySize = (() => {
+      switch (size) {
+        case 'lg':
+        case 'xl':
+          return 'large';
+        case 'sm':
+        case 'md':
+          return 'small';
+        default:
+          return 'small';
+      }
+    })();
+
+    /* Override to disabled props so it don't trigger actions */
+    usedProps.disabled = true;
+    usedProps.android_disableSound = true;
+
+    return (
+      <BaseButton {...usedProps}>
+        <View flexDirection="row" alignItems="center">
+          <ActivityIndicator
+            size={activitySize}
+            color={ButtonVariants.variants[currentVariant].color}
+            accessibilityHint="loading"
+          />
+        </View>
+      </BaseButton>
+    );
+  }
+
   return (
     <BaseButton {...usedProps}>
       <View flexDirection="row" alignItems="center">
@@ -139,6 +176,7 @@ Button.defaultProps = {
   title: 'Button',
   disabled: false,
   iconPosition: 'left',
+  isLoading: false,
 };
 
 export default Button;

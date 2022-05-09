@@ -234,4 +234,42 @@ describe('Button', () => {
       expect(toJSON()).toMatchSnapshot();
     });
   });
+
+  describe('in loading state', () => {
+    const mockFn = jest.fn(() => null);
+    const loadingProps = {
+      testID: 'myLoadingButton',
+      variant: 'primary',
+      size: 'md',
+      title: 'My Button',
+      onPress: mockFn,
+      isLoading: true,
+    };
+
+    it('should render loading spinner', () => {
+      const {toJSON, getByA11yHint} = render(<Button {...loadingProps} />);
+      const activityIndicator = getByA11yHint('loading');
+
+      expect(activityIndicator).toBeDefined();
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should be in disabled state and not triggering any action', async () => {
+      const {toJSON, getByTestId} = render(<Button {...loadingProps} />);
+      const btn = getByTestId('myLoadingButton');
+      fireEvent.press(btn);
+
+      expect(btn.props.isLoading).toBeTruthy();
+      await waitFor(() => expect(mockFn.mock.calls.length).toBe(0));
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('renders successfully', () => {
+      const activeButton = render(<Button {...loadingProps} />);
+      const {toJSON} = activeButton;
+
+      expect(activeButton).toBeDefined();
+      expect(toJSON()).toMatchSnapshot();
+    });
+  });
 });

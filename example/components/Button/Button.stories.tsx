@@ -83,4 +83,5 @@ Default.args = {
   size: 'md',
   title: 'Button',
   disabled: false,
+  isLoading: false,
 };

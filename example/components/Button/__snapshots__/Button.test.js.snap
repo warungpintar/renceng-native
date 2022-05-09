@@ -10,6 +10,7 @@ exports[`Button in disabled/inactive state doesn't fire event on press 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -88,6 +89,7 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -166,6 +168,7 @@ exports[`Button in disabled/inactive state shows correct color when disabled 1`]
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -234,6 +237,195 @@ exports[`Button in disabled/inactive state shows correct color when disabled 1`]
 </View>
 `;
 
+exports[`Button in loading state renders successfully 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myLoadingButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityHint="loading"
+      color="#161616"
+      size="small"
+    />
+  </View>
+</View>
+`;
+
+exports[`Button in loading state should be in disabled state and not triggering any action 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myLoadingButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityHint="loading"
+      color="#161616"
+      size="small"
+    />
+  </View>
+</View>
+`;
+
+exports[`Button in loading state should render loading spinner 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  isLoading={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="md"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FECF28",
+        "borderColor": "#FECF28",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#161616",
+        "fontSize": 14,
+        "paddingBottom": 16,
+        "paddingLeft": 32,
+        "paddingRight": 32,
+        "paddingTop": 16,
+      },
+      undefined,
+    ]
+  }
+  testID="myLoadingButton"
+  variant="primary"
+>
+  <View
+    alignItems="center"
+    flexDirection="row"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      accessibilityHint="loading"
+      color="#161616"
+      size="small"
+    />
+  </View>
+</View>
+`;
+
 exports[`Button use size props correctly fires the assigned event on press 1`] = `
 <View
   accessibilityState={
@@ -244,6 +436,7 @@ exports[`Button use size props correctly fires the assigned event on press 1`] =
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -322,6 +515,7 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -400,6 +594,7 @@ exports[`Button use size props correctly renders primary variant and large size 
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -478,6 +673,7 @@ exports[`Button use size props correctly renders successfully 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -556,6 +752,7 @@ exports[`Button use variant props fires the assigned event on press 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -634,6 +831,7 @@ exports[`Button use variant props outputs correct title/text 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -712,6 +910,7 @@ exports[`Button use variant props renders primary variant correctly 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -790,6 +989,7 @@ exports[`Button use variant props renders successfully 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -868,6 +1068,7 @@ exports[`Button with icon renders icon component 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -1014,6 +1215,7 @@ exports[`Button with icon renders icon component on the right side of button 1`]
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -1160,6 +1362,7 @@ exports[`Button with icon renders successfully 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -1306,6 +1509,7 @@ exports[`Button with icon should dynamically change the icon size if iconSize pr
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -1452,6 +1656,7 @@ exports[`Button with icon should follow the default fontSize & color of the resp
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -1598,6 +1803,7 @@ exports[`Button with icon shouldn't render icon component if icon property is em
   accessible={true}
   collapsable={false}
   focusable={true}
+  isLoading={false}
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
