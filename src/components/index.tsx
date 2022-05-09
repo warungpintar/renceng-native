@@ -12,3 +12,6 @@ export * from './Text';
 
 export { default as Image } from './Image';
 export * from './Image';
+
+export { default as Button } from './Button';
+export * from './Button';

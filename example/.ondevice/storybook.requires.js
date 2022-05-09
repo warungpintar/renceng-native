@@ -28,6 +28,7 @@ argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
 
 const getStories = () => {
   return [
+    require("../components/Button/Button.stories.tsx"),
     require("../components/Divider/Divider.stories.tsx"),
     require("../components/Icon/Icon.stories.tsx"),
     require("../components/Image/Image.stories.tsx"),
