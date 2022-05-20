@@ -134,7 +134,7 @@ $ yarn fetch:local
 $ ./update-local.sh
 ```
 
-## How to contribute
+# How to contribute
 
 Create new branch from master using
 
@@ -150,7 +150,7 @@ Create pull request to master
 
 Create new issue in Issues if you find any issue/bug
 
-## Roadmap
+# Roadmap
 
 - [x] Base package
 - [x] Storybook react-native
