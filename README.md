@@ -16,8 +16,17 @@ renceng-native is an implementation of Renceng Design Language System for react-
   .storybook # web storybook
 ```
 
-## How to run
+# How to run
 
+## With script
+You can run all the required step with one command
+```bash
+$ ./first-setup.sh
+```
+
+or
+
+## With Manual Step
 ### Install & build main package
 
 ```bash
@@ -78,7 +87,8 @@ $ yarn android
 $ yarn start --reset-cache
 ```
 
-## How to develop new component
+# How to develop new component
+
 
 ### Go to root package (renceng-native/_here_)
 
@@ -124,7 +134,7 @@ $ yarn fetch:local
 $ ./update-local.sh
 ```
 
-## How to contribute
+# How to contribute
 
 Create new branch from master using
 
@@ -140,7 +150,7 @@ Create pull request to master
 
 Create new issue in Issues if you find any issue/bug
 
-## Roadmap
+# Roadmap
 
 - [x] Base package
 - [x] Storybook react-native

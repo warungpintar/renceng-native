@@ -14,7 +14,7 @@ export default {
 
 export const Basic: ComponentStory<typeof View> = args => (
   <Showcase>
-    <ShowcaseSection title="View" subtitle="Basic" propsName="basic">
+    <ShowcaseSection title="View" subtitle="Basic">
       <ShowcaseItem title={'large'}>
         <View {...args} width={300} />
       </ShowcaseItem>
@@ -31,11 +31,62 @@ export const Basic: ComponentStory<typeof View> = args => (
   </Showcase>
 );
 
-export const Rounded: ComponentStory<typeof View> = args => <View {...args} />;
+export const Rounded: ComponentStory<typeof View> = args => (
+  <Showcase>
+    <ShowcaseSection title="View" subtitle="Rounded">
+      <ShowcaseItem title={'large'}>
+        <View {...args} width={300} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'medium'}>
+        <View {...args} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'small'}>
+        <View {...args} width={100} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'extra small'}>
+        <View {...args} width={50} />
+      </ShowcaseItem>
+    </ShowcaseSection>
+  </Showcase>
+);
 
-export const Shadow: ComponentStory<typeof View> = args => <View {...args} />;
+export const Shadow: ComponentStory<typeof View> = args => (
+  <Showcase>
+    <ShowcaseSection title="View" subtitle="Shadow (react-native only)">
+      <ShowcaseItem title={'large'}>
+        <View {...args} width={300} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'medium'}>
+        <View {...args} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'small'}>
+        <View {...args} width={100} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'extra small'}>
+        <View {...args} width={50} />
+      </ShowcaseItem>
+    </ShowcaseSection>
+  </Showcase>
+);
 
-export const Color: ComponentStory<typeof View> = args => <View {...args} />;
+export const Color: ComponentStory<typeof View> = args => (
+  <Showcase>
+    <ShowcaseSection title="View" subtitle="Color">
+      <ShowcaseItem title={'large'}>
+        <View {...args} width={300} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'medium'}>
+        <View {...args} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'small'}>
+        <View {...args} width={100} />
+      </ShowcaseItem>
+      <ShowcaseItem title={'extra small'}>
+        <View {...args} width={50} />
+      </ShowcaseItem>
+    </ShowcaseSection>
+  </Showcase>
+);
 
 Basic.args = {
   width: 200,
@@ -60,6 +111,9 @@ Shadow.args = {
   width: 200,
   height: 100,
   bg: 'white',
+  borderWidth: 0.5,
+  borderColor: 'black',
+  borderStyle: 'solid',
   shadowColor: 'black',
   shadowOffset: {
     width: 4,
