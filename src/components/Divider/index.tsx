@@ -37,4 +37,10 @@ const Divider = ({
   return <BaseView {...usedProps} />;
 };
 
+Divider.defaultProps = {
+  size: 1,
+  color: 'black',
+  type: 'solid'
+};
+
 export default Divider;
