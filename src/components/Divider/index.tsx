@@ -40,7 +40,7 @@ const Divider = ({
 Divider.defaultProps = {
   size: 1,
   color: 'black',
-  type: 'solid'
+  type: 'solid',
 };
 
 export default Divider;
