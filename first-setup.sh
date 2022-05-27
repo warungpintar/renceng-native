@@ -1,5 +1,6 @@
 #!/bin/sh
 
+yarn prepare-husky
 yarn install
 yarn build
 yarn global add yalc
