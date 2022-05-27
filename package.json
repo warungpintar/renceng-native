@@ -17,7 +17,9 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "publish:local": "yalc publish"
+    "publish:local": "yalc publish",
+    "prepare-husky": "husky install",
+    "test:unitcomponents": "tsdx test --bail --verbose --passWithNoTests"
   },
   "peerDependencies": {
     "react": "^16.8.6",
@@ -25,8 +27,18 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn test:unitcomponents --collect-coverage",
+      "yarn lint - --fix",
+      "yarn prettier --write"
+    ],
+    "src/*.{css,md,html}": [
+      "yarn lint --fix"
+    ]
   },
   "prettier": {
     "printWidth": 80,
@@ -52,6 +64,7 @@
     "@types/react": "^17.0.3",
     "@types/react-native": "^0.64.2",
     "husky": "^7.0.4",
+    "lint-staged": "^12.4.2",
     "react": "^16.8.6",
     "react-native": "^0.64.0",
     "size-limit": "^7.0.8",
