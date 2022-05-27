@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,7 +34,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "renceng-native",
+  "name": "@warungpintar/renceng-native",
   "author": "Muhammad Irsyad",
   "module": "dist/renceng-native.esm.js",
   "size-limit": [
@@ -64,9 +64,25 @@
     "@emotion/react": "^11.9.0",
     "@types/styled-system": "^5.1.15",
     "emotion-theming": "^10.0.19",
+    "global": "^4.4.0",
     "react": "^16.8.6",
     "react-native-eva-icons": "^1.3.1",
     "react-native-svg": "^12.3.0",
     "styled-system": "^5.1.2"
-  }
+  },
+  "description": "renceng-native is an implementation of Renceng Design Language System for react-native apps.",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warungpintar/renceng-native.git"
+  },
+  "keywords": [
+    "renceng"
+  ],
+  "bugs": {
+    "url": "https://github.com/warungpintar/renceng-native/issues"
+  },
+  "homepage": "https://github.com/warungpintar/renceng-native#readme"
 }
