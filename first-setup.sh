@@ -1,7 +1,7 @@
 #!/bin/sh
 
-yarn prepare-husky
 yarn install
+yarn prepare-husky
 yarn build
 yarn global add yalc
 yalc publish:local
