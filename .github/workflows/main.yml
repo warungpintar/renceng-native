@@ -25,9 +25,27 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Test
-        run: yarn test --passWithNoTests --ci --coverage --maxWorkers=2
-        working-directory: ./example
-
       - name: Build
         run: yarn build
+
+      - name: Install yalc
+        run: yarn global add yalc
+
+      - name: Publish local package
+        run: yarn publish:local
+
+      - name: Temporary uninstall renceng-native package
+        run: yarn remove renceng-native --save
+        working-directory: ./example
+
+      - name: Add local package to ./example
+        run: yarn add:local
+        working-directory: ./example
+
+      - name: Install on ./example
+        run: yarn install
+        working-directory: ./example
+
+      - name: Test on ./example
+        run: yarn test --passWithNoTests --ci --coverage --maxWorkers=2
+        working-directory: ./example
