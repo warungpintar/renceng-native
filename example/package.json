@@ -26,7 +26,7 @@
     "react-native-eva-icons": "^1.3.1",
     "react-native-svg": "^12.3.0",
     "react-native-web": "^0.17.7",
-    "renceng-native": "file:.yalc/renceng-native"
+    "@warungpintar/renceng-native": "file:.yalc/@warungpintar/renceng-native"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

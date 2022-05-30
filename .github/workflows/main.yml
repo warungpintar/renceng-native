@@ -34,6 +34,10 @@ jobs:
       - name: Publish local package
         run: yarn publish:local
 
+      - name: Temporary uninstall renceng-native package
+        run: yarn remove @warungpintar/renceng-native --save
+        working-directory: ./example
+
       - name: Add local package to ./example
         run: yarn add:local
         working-directory: ./example
