@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {View} from 'renceng-native';
+import {View} from '@warungpintar/renceng-native';
 
 describe('View', () => {
   test('basic', () => {

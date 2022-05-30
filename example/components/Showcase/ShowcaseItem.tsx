@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'renceng-native';
+import {View} from '@warungpintar/renceng-native';
 import {Text} from 'react-native';
 
 // TODO: change text component

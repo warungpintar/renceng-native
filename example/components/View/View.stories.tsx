@@ -1,6 +1,6 @@
 import React from 'react';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {View} from 'renceng-native';
+import {View} from '@warungpintar/renceng-native';
 import {
   ShowcaseSection,
   ShowcaseItem,
