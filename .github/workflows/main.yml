@@ -34,10 +34,6 @@ jobs:
       - name: Publish local package
         run: yarn publish:local
 
-      - name: Temporary uninstall renceng-native package
-        run: yarn remove renceng-native --save
-        working-directory: ./example
-
       - name: Add local package to ./example
         run: yarn add:local
         working-directory: ./example
@@ -47,5 +43,5 @@ jobs:
         working-directory: ./example
 
       - name: Test on ./example
-        run: yarn test --passWithNoTests --ci --coverage --maxWorkers=2
+        run: yarn test -u --passWithNoTests --ci --coverage --maxWorkers=2
         working-directory: ./example
