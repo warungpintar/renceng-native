@@ -27,6 +27,7 @@ jobs:
 
       - name: Test
         run: yarn test --passWithNoTests --ci --coverage --maxWorkers=2
+        working-directory: ./example
 
       - name: Build
         run: yarn build
