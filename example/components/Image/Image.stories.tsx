@@ -6,7 +6,7 @@ import {
   Showcase,
 } from '../../components/Showcase';
 
-import {View, Image} from 'renceng-native';
+import {View, Image} from '@warungpintar/renceng-native';
 export default {
   title: 'components/Image',
   component: Image,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'renceng-native';
+import {Button} from '@warungpintar/renceng-native';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
 import {
   ShowcaseSection,

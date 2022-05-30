@@ -6,7 +6,7 @@ import {
   Showcase,
 } from '../../components/Showcase';
 
-import {Icon} from 'renceng-native';
+import {Icon} from '@warungpintar/renceng-native';
 
 export default {
   title: 'components/Icon',

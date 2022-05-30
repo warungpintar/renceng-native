@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {Image} from 'renceng-native';
+import {Image} from '@warungpintar/renceng-native';
 import WPImage from './assets/images/WP.png';
 
 jest.mock('./assets/images/WP.png');

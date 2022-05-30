@@ -6,7 +6,7 @@ import {
   Showcase,
 } from '../../components/Showcase';
 
-import {View, Text, colors} from 'renceng-native';
+import {View, Text, colors} from '@warungpintar/renceng-native';
 
 export default {
   title: 'components/Text',

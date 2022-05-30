@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {Icon} from 'renceng-native';
+import {Icon} from '@warungpintar/renceng-native';
 
 describe('Icon', () => {
   test('should render correctly with basic icon', () => {

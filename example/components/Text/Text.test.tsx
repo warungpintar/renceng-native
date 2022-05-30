@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {Text,colors} from 'renceng-native';
+import {Text,colors} from '@warungpintar/renceng-native';
 
 describe('Text', () => {
   test('basic', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {Divider} from 'renceng-native';
+import {Divider} from '@warungpintar/renceng-native';
 
 describe('Divider', () => {
   test('basic, should render without props', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent, render, waitFor} from '@testing-library/react-native';
-import {Button, Variants} from 'renceng-native';
+import {Button, Variants} from '@warungpintar/renceng-native';
 
 const {ButtonVariants, ButtonSizes} = Variants;
 
