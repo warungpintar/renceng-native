@@ -22,7 +22,8 @@
     "test:unitcomponents": "tsdx test --bail --verbose --passWithNoTests"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-native": "^0.64.0"
   },
   "husky": {
     "hooks": {
