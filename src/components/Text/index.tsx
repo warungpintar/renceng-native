@@ -34,6 +34,7 @@ const Text = (props: TextProps) => {
 
 Text.defaultProps = {
   color: 'black',
+  fontFamily: 'OpenSans',
 };
 
 export default Text;
