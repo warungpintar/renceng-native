@@ -43,8 +43,8 @@ const Image = (props: ImageProps) => {
 Image.defaultProps = {
   withProxy: false,
   resizeMode: 'contain',
-  height: 16,
-  width: 16,
+  height: 128,
+  width: 128,
 };
 
 export default Image;
