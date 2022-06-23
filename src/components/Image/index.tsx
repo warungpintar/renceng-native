@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image as RNImage, ImageProps as RNImageProps } from 'react-native';
 import {
   layout,
   LayoutProps,
@@ -8,7 +9,6 @@ import {
   BorderProps,
 } from 'styled-system';
 import styled from '@emotion/native';
-import { Image as RNImage, ImageProps as RNImageProps } from 'react-native';
 
 export declare type ResizeMode = 'contain' | 'cover' | 'stretch' | 'center';
 
@@ -43,6 +43,8 @@ const Image = (props: ImageProps) => {
 Image.defaultProps = {
   withProxy: false,
   resizeMode: 'contain',
+  height: 16,
+  width: 16,
 };
 
 export default Image;
