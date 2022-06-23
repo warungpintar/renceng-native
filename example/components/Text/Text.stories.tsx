@@ -16,6 +16,11 @@ export default {
 export const Basic: ComponentStory<typeof Text> = args => (
   <Showcase>
     <ShowcaseSection title="Text" subtitle="Basic">
+      <ShowcaseItem title={'react-native style'}>
+        <View width={200}>
+          <Text style={{ fontSize: 16, color: 'red' }}>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
       <ShowcaseItem title={'11px'}>
         <View width={200}>
           <Text {...args}>Forage shoreditch flannel seitan skateboard</Text>

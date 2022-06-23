@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text as RNText } from 'react-native';
+import { Text as RNText, TextProps as RNTextProps } from 'react-native';
 import {
   typography,
   TypographyProps,
@@ -15,6 +15,7 @@ import styled from '@emotion/native';
 import { Variants } from '../../themes';
 
 export type TextProps = TypographyProps &
+  RNTextProps &
   SpaceProps &
   ColorProps &
   FlexProps & {
