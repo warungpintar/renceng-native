@@ -3,10 +3,12 @@
 exports[`Text align 1`] = `
 <Text
   color="black"
+  fontFamily="OpenSans"
   style={
     Array [
       Object {
         "color": "black",
+        "fontFamily": "OpenSans",
         "textAlign": "left",
       },
       undefined,
@@ -22,11 +24,13 @@ exports[`Text align 1`] = `
 exports[`Text basic 1`] = `
 <Text
   color="black"
+  fontFamily="OpenSans"
   fontSize={12}
   style={
     Array [
       Object {
         "color": "black",
+        "fontFamily": "OpenSans",
         "fontSize": 12,
       },
       undefined,
@@ -42,10 +46,12 @@ exports[`Text category 1`] = `
 <Text
   category="md"
   color="black"
+  fontFamily="OpenSans"
   style={
     Array [
       Object {
         "color": "black",
+        "fontFamily": "OpenSans",
         "fontSize": 14,
       },
       undefined,
@@ -60,10 +66,12 @@ exports[`Text category 1`] = `
 exports[`Text color 1`] = `
 <Text
   color="#FECF28"
+  fontFamily="OpenSans"
   style={
     Array [
       Object {
         "color": "#FECF28",
+        "fontFamily": "OpenSans",
       },
       undefined,
     ]
