@@ -17,12 +17,14 @@ exports[`Icon should render correctly with basic icon 1`] = `
     align="xMidYMid"
     bbHeight={16}
     bbWidth={16}
+    color={4278190080}
     fill="black"
     focusable={false}
     height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
+    size={16}
     style={
       Array [
         Object {
@@ -37,6 +39,7 @@ exports[`Icon should render correctly with basic icon 1`] = `
       ]
     }
     testID="my-icon"
+    tintColor={4278190080}
     vbHeight={24}
     vbWidth={24}
     width={16}
@@ -85,12 +88,14 @@ exports[`Icon should render correctly with color icon 1`] = `
     align="xMidYMid"
     bbHeight={16}
     bbWidth={16}
+    color={4294889256}
     fill="#FECF28"
     focusable={false}
     height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
+    size={16}
     style={
       Array [
         Object {
@@ -105,6 +110,7 @@ exports[`Icon should render correctly with color icon 1`] = `
       ]
     }
     testID="my-icon"
+    tintColor={4294889256}
     vbHeight={24}
     vbWidth={24}
     width={16}
@@ -153,12 +159,14 @@ exports[`Icon should render correctly with outline icon 1`] = `
     align="xMidYMid"
     bbHeight={16}
     bbWidth={16}
+    color={4278190080}
     fill="black"
     focusable={false}
     height={16}
     meetOrSlice={0}
     minX={0}
     minY={0}
+    size={16}
     style={
       Array [
         Object {
@@ -173,6 +181,7 @@ exports[`Icon should render correctly with outline icon 1`] = `
       ]
     }
     testID="my-icon"
+    tintColor={4278190080}
     vbHeight={24}
     vbWidth={24}
     width={16}
