@@ -15,6 +15,9 @@ export default {
 export const URI: ComponentStory<typeof Image> = args => (
   <Showcase>
     <ShowcaseSection title="Image" subtitle="Image with URL">
+      <ShowcaseItem title="default width and height">
+        <Image {...args} />
+      </ShowcaseItem>
       <ShowcaseItem title={'small'}>
         <Image {...args} width={200} height={200} />
       </ShowcaseItem>
