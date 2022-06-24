@@ -250,7 +250,7 @@ export const Weight: ComponentStory<typeof Text> = args => (
 
 export const CustomFont: ComponentStory<typeof Text> = args => (
   <Showcase>
-    <ShowcaseSection title="Text" subtitle="Custom Font">
+    <ShowcaseSection title="Text" subtitle="Custom Font: Only works in react native storybook(for now)">
       <ShowcaseItem title={'Default RN Font (regular)'}>
         <View width={160}>
           <Text fontSize={16} fontFamily='unknown'>Forage shoreditch flannel seitan skateboard</Text>
