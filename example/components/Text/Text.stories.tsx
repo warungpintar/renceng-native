@@ -16,6 +16,11 @@ export default {
 export const Basic: ComponentStory<typeof Text> = args => (
   <Showcase>
     <ShowcaseSection title="Text" subtitle="Basic">
+      <ShowcaseItem title={'react-native style'}>
+        <View width={200}>
+          <Text style={{ fontSize: 16, color: 'red' }}>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
       <ShowcaseItem title={'11px'}>
         <View width={200}>
           <Text {...args}>Forage shoreditch flannel seitan skateboard</Text>
@@ -231,12 +236,64 @@ export const Weight: ComponentStory<typeof Text> = args => (
       </ShowcaseItem>
       <ShowcaseItem title={'Semi-Bold'}>
         <View width={200}>
-          <Text {...args} category='lg' fontWeight='600'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category='lg' fontFamily='OpenSans-SemiBold'>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Bold'}>
         <View width={200}>
-          <Text {...args} category='lg' fontWeight='800'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category='lg' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+    </ShowcaseSection>
+  </Showcase>
+);
+
+export const CustomFont: ComponentStory<typeof Text> = args => (
+  <Showcase>
+    <ShowcaseSection title="Text" subtitle="Custom Font: Only works in react native storybook(for now)">
+      <ShowcaseItem title={'Default RN Font (regular)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='unknown'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Open Sans (regular)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='OpenSans'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Montserrat (regular)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='Montserrat'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Default RN Font (semi-bold)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='unknown' fontWeight='600'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Open Sans (semi-bold)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='OpenSans-SemiBold'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Montserrat (semi-bold)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='Montserrat-SemiBold'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Default RN Font (bold)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='unknown' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Open Sans (bold)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='OpenSans' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+        </View>
+      </ShowcaseItem>
+      <ShowcaseItem title={'Montserrat (bold)'}>
+        <View width={160}>
+          <Text fontSize={16} fontFamily='Montserrat' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
@@ -262,3 +319,7 @@ Color.args = {
 Weight.args = {
   fontWeight: '400',
 }
+
+CustomFont.args = {
+  fontSize: 11
+};
