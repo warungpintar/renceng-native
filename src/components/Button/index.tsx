@@ -2,11 +2,9 @@ import React from 'react';
 import styled from '@emotion/native';
 import { Variants } from '../../themes';
 import { rippleConfig } from '../../constants';
-import ButtonIcon from '../Icon';
 import View from '../View';
+import Text, { TextProps } from '../Text';
 import {
-  Text,
-  TextProps,
   Pressable as Base,
   PressableProps as BaseProps,
   ActivityIndicator,
@@ -37,21 +35,22 @@ export type ButtonProps = {
     | 'outline-disabled'
     | 'disabled'
     | 'link-disabled';
-  size: 'sm' | 'md' | 'lg' | 'xl';
-  title: string;
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   disabled?: boolean;
   icon?: string;
   iconPosition?: 'left' | 'right';
   /** Default will follows button's fontSize but also dynamically applicable */
   iconSize?: number;
   isLoading?: boolean;
+  textProps?: TextProps;
 } & BaseProps &
   SpaceProps &
   BorderProps &
   TypographyProps;
 
-const BaseButton = styled(Base)<Omit<ButtonProps, 'title'>>`
+const BaseButton = styled(Base)<ButtonProps>`
   ${compose(
+    color,
     space,
     border,
     typography,
@@ -60,18 +59,9 @@ const BaseButton = styled(Base)<Omit<ButtonProps, 'title'>>`
   )}
 `;
 
-export type ButtonTextProps = TextProps &
-  TypographyProps &
-  ColorProps &
-  SpaceProps;
-const ButtonText = styled(Text)<ButtonTextProps>`
-  ${compose(typography, color, space)}
-`;
-
 const Button = ({
   variant,
   size,
-  title,
   disabled,
   icon,
   iconPosition,
@@ -120,6 +110,23 @@ const Button = ({
       }
     })();
 
+    const textSize = (() => {
+      switch (size) {
+        case 'xl':
+          return 18;
+        case 'lg':
+          return 16;
+        case 'md':
+          return 14;
+        case 'sm':
+          return 12;
+        case 'xs':
+          return 11;
+        default:
+          return 14;
+      }
+    })();
+
     /* Override to disabled props so it don't trigger actions */
     usedProps.disabled = true;
     usedProps.android_disableSound = true;
@@ -132,48 +139,27 @@ const Button = ({
             color={ButtonVariants.variants[currentVariant].color}
             accessibilityHint="loading"
           />
+          <Text fontSize={textSize} ml={1}>
+            Loading
+          </Text>
         </View>
       </BaseButton>
     );
   }
 
-  return (
-    <BaseButton {...usedProps}>
-      <View flexDirection="row" alignItems="center">
-        {icon && iconPosition === 'left' && (
-          <ButtonIcon
-            name={icon}
-            size={iconSize ?? ButtonSizes.variants[size].fontSize}
-            color={ButtonVariants.variants[currentVariant].color}
-            testID="btnIconLeft"
-          />
-        )}
-        <ButtonText
-          color={ButtonVariants.variants[currentVariant].color}
-          fontSize={ButtonSizes.variants[size].fontSize}
-          fontWeight={props?.fontWeight ?? '600'}
-          ml={icon && iconPosition === 'left' ? 2 : 0}
-          mr={icon && iconPosition === 'right' ? 2 : 0}
-        >
-          {title}
-        </ButtonText>
-        {icon && iconPosition === 'right' && (
-          <ButtonIcon
-            name={icon}
-            size={iconSize ?? ButtonSizes.variants[size].fontSize}
-            color={ButtonVariants.variants[currentVariant].color}
-            testID="btnIconRight"
-          />
-        )}
-      </View>
-    </BaseButton>
-  );
+  const child =
+    typeof props.children === 'string' || typeof props.children === 'number' ? (
+      <Text {...props.textProps}>{props.children}</Text>
+    ) : (
+      props.children
+    );
+
+  return <BaseButton {...usedProps} children={child} />;
 };
 
 Button.defaultProps = {
   variant: 'primary',
   size: 'md',
-  title: 'Button',
   disabled: false,
   iconPosition: 'left',
   isLoading: false,
