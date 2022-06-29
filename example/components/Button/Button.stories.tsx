@@ -6,7 +6,6 @@ import {
   ShowcaseItem,
   Showcase,
 } from '../../components/Showcase';
-import { PointPropType } from 'react-native';
 
 export default {
   title: 'components/Button',
