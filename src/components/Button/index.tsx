@@ -38,10 +38,7 @@ export type ButtonProps = {
     | 'link-disabled';
   size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   disabled?: boolean;
-  icon?: string;
-  iconPosition?: 'left' | 'right';
   /** Default will follows button's fontSize but also dynamically applicable */
-  iconSize?: number;
   isLoading?: boolean;
   textProps?: TextProps;
 } & BaseProps &
@@ -65,9 +62,6 @@ const Button = ({
   variant,
   size,
   disabled,
-  icon,
-  iconPosition,
-  iconSize,
   isLoading,
   ...props
 }: ButtonProps) => {
@@ -163,7 +157,6 @@ Button.defaultProps = {
   variant: 'primary',
   size: 'md',
   disabled: false,
-  iconPosition: 'left',
   isLoading: false,
 };
 
