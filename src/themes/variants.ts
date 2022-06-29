@@ -89,25 +89,25 @@ export const Variants = {
   ButtonSizes: {
     prop: 'size',
     variants: {
+      xs: {
+        py: 1,
+        px: 2,
+      },
       sm: {
-        py: 12,
-        px: 28,
-        fontSize: 12,
+        py: 2,
+        px: 3,
       },
       md: {
-        py: 16,
-        px: 32,
-        fontSize: 14,
+        py: 2,
+        px: 3,
       },
       lg: {
-        py: 20,
-        px: 36,
-        fontSize: 16,
+        py: 12,
+        px: 24,
       },
       xl: {
-        py: 24,
-        px: 40,
-        fontSize: 18,
+        py: 3,
+        px: 4,
       },
     },
   },
