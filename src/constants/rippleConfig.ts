@@ -23,4 +23,7 @@ export const rippleConfig = {
   'outline-disabled': {},
   'link-disabled': {},
   disabled: {},
+  custom: {
+    color: '#FFFFFF',
+  },
 };

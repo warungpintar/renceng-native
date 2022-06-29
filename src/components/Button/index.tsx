@@ -25,6 +25,7 @@ const { ButtonVariants, ButtonSizes } = Variants;
 
 export type ButtonProps = {
   variant:
+    | 'custom'
     | 'primary'
     | 'blue'
     | 'success'
@@ -44,6 +45,7 @@ export type ButtonProps = {
   isLoading?: boolean;
   textProps?: TextProps;
 } & BaseProps &
+  ColorProps &
   SpaceProps &
   BorderProps &
   TypographyProps;

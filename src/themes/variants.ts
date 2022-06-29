@@ -18,6 +18,11 @@ export const Variants = {
   }),
   ButtonVariants: {
     variants: {
+      custom: {
+        color: '#000000',
+        bg: '#FFFFFF',
+        borderRadius: 4,
+      },
       primary: {
         color: '#161616',
         bg: '#FECF28',
