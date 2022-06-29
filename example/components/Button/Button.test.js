@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent, render, waitFor} from '@testing-library/react-native';
-import {Button, Variants} from '@warungpintar/renceng-native';
+import {Button, Variants, Text, Icon} from '@warungpintar/renceng-native';
 
 const {ButtonVariants, ButtonSizes} = Variants;
 
@@ -11,7 +11,6 @@ describe('Button', () => {
       testID: 'myPrimaryButton',
       variant: 'primary',
       size: 'md',
-      title: 'My Button',
       onPress: mockFn,
     };
     /*
@@ -19,7 +18,7 @@ describe('Button', () => {
       it's unmounted before it finish running each cases
     */
     it('outputs correct title/text', () => {
-      const {getByText, toJSON} = render(<Button {...primaryProps} />);
+      const {getByText, toJSON} = render(<Button {...primaryProps}><Text>My Button</Text></Button>);
 
       expect(getByText('My Button')).toBeTruthy();
       expect(toJSON()).toMatchSnapshot();
@@ -60,12 +59,11 @@ describe('Button', () => {
       testID: 'myPrimaryButton',
       variant: 'primary',
       size: 'lg',
-      title: 'My Button',
       onPress: mockFn,
     };
 
     it('outputs correct title/text', () => {
-      const {getByText, toJSON} = render(<Button {...primaryProps} />);
+      const {getByText, toJSON} = render(<Button {...primaryProps}><Text>My Button</Text></Button>);
 
       expect(getByText('My Button')).toBeTruthy();
       expect(toJSON()).toMatchSnapshot();
@@ -88,11 +86,10 @@ describe('Button', () => {
       expect(btnProps.style?.[0]?.backgroundColor).toMatch(
         ButtonVariants.variants.primary.bg,
       );
-      expect(btnProps.style?.[0]?.fontSize).toBe(16);
-      expect(btnProps.style?.[0]?.paddingTop).toBe(20);
-      expect(btnProps.style?.[0]?.paddingBottom).toBe(20);
-      expect(btnProps.style?.[0]?.paddingLeft).toBe(36);
-      expect(btnProps.style?.[0]?.paddingRight).toBe(36);
+      expect(btnProps.style?.[0]?.paddingTop).toBe(12);
+      expect(btnProps.style?.[0]?.paddingBottom).toBe(12);
+      expect(btnProps.style?.[0]?.paddingLeft).toBe(24);
+      expect(btnProps.style?.[0]?.paddingRight).toBe(24);
       expect(toJSON()).toMatchSnapshot();
     });
 
@@ -111,13 +108,12 @@ describe('Button', () => {
       testID: 'myDisabledButton',
       variant: 'primary',
       size: 'md',
-      title: 'My Button',
       onPress: mockFn,
       disabled: true,
     };
 
     it('outputs correct title/text', () => {
-      const {getByText, toJSON} = render(<Button {...disabledProps} />);
+      const {getByText, toJSON} = render(<Button {...disabledProps}><Text>My Button</Text></Button>);
 
       expect(getByText('My Button')).toBeTruthy();
       expect(toJSON()).toMatchSnapshot();
@@ -145,19 +141,22 @@ describe('Button', () => {
 
   describe('with icon', () => {
     const mockFn = jest.fn(() => null);
-    const iconProps = {
+    const buttonProps = {
       testID: 'myIconButton',
       variant: 'primary',
       size: 'md',
-      title: 'My Button',
-      onPress: mockFn,
-      icon: 'car',
-      iconPosition: 'left',
+      onPress: mockFn
     };
 
+    const iconProps = {
+      testID: 'my-icon',
+      name: 'car-outline',
+      size: 16,
+    }
+
     it('renders icon component', () => {
-      const {queryAllByTestId, toJSON} = render(<Button {...iconProps} />);
-      const iconElement = queryAllByTestId('btnIconLeft');
+      const {queryAllByTestId, toJSON} = render(<Button {...buttonProps}><Icon {...iconProps}/></Button>);
+      const iconElement = queryAllByTestId('my-icon');
 
       expect(iconElement.length).toBe(1);
       expect(toJSON()).toMatchSnapshot();
@@ -172,57 +171,9 @@ describe('Button', () => {
         onPress: mockFn,
       };
       const {queryAllByTestId, toJSON} = render(<Button {...noIconProps} />);
-      const iconElement = queryAllByTestId('btnIconLeft');
+      const iconElement = queryAllByTestId('my-icon');
 
       expect(iconElement.length).toBe(0);
-      expect(toJSON()).toMatchSnapshot();
-    });
-
-    it('renders icon component on the right side of button', () => {
-      const rightIconProps = {
-        testID: 'myIconButton',
-        variant: 'primary',
-        size: 'md',
-        title: 'My Button',
-        onPress: mockFn,
-        icon: 'car',
-        iconPosition: 'right',
-      };
-      const {queryAllByTestId, toJSON} = render(<Button {...rightIconProps} />);
-      const leftIconElement = queryAllByTestId('btnIconLeft');
-      const rightIconElement = queryAllByTestId('btnIconRight');
-
-      expect(leftIconElement.length).toBe(0);
-      expect(rightIconElement.length).toBe(1);
-      expect(toJSON()).toMatchSnapshot();
-    });
-
-    it('should follow the default fontSize & color of the respective button', () => {
-      const {getByTestId, toJSON} = render(<Button {...iconProps} />);
-      const iconElement = getByTestId('btnIconLeft');
-
-      expect(iconElement.props.size).toBe(ButtonSizes.variants.md.fontSize);
-      expect(iconElement.props.fill).toMatch(
-        ButtonVariants.variants.primary.color,
-      );
-      expect(toJSON()).toMatchSnapshot();
-    });
-
-    it('should dynamically change the icon size if iconSize property is passed', () => {
-      const myIconProps = {
-        testID: 'myIconButton',
-        variant: 'primary',
-        size: 'md',
-        title: 'My Button',
-        onPress: mockFn,
-        icon: 'car',
-        iconPosition: 'left',
-        iconSize: 32,
-      };
-      const {getByTestId, toJSON} = render(<Button {...myIconProps} />);
-
-      const iconElement = getByTestId('btnIconLeft');
-      expect(iconElement.props.size).toBe(32);
       expect(toJSON()).toMatchSnapshot();
     });
 
