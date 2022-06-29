@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from '@warungpintar/renceng-native';
+import {Button,Text,Icon} from '@warungpintar/renceng-native';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
 import {
   ShowcaseSection,
@@ -48,40 +48,31 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-export const Default: ComponentStory<typeof Button> = args => (
+export const Size: ComponentStory<typeof Button> = args => (
   <Showcase>
-    <ShowcaseSection title="Button" subtitle="Basic">
-      <ShowcaseItem title="Default">
-        <Button {...args} />
+    <ShowcaseSection title="Button" subtitle="Size">
+      <ShowcaseItem title="xs">
+        <Button size="xs"><Text fontSize={11}>Tiny</Text></Button>
+      </ShowcaseItem>
+      <ShowcaseItem title="sm">
+        <Button size="sm"><Text fontSize={12}>Small</Text></Button>
+      </ShowcaseItem>
+      <ShowcaseItem title="md">
+        <Button size="md"><Text fontSize={14}>Medium</Text></Button>
+      </ShowcaseItem>
+      <ShowcaseItem title="lg">
+        <Button size="lg"><Text fontSize={16}>Large</Text></Button>
+      </ShowcaseItem>
+      <ShowcaseItem title="xl">
+        <Button size="xl"><Text fontSize={18}>Giant</Text></Button>
       </ShowcaseItem>
     </ShowcaseSection>
   </Showcase>
 );
 
-export const Icon: ComponentStory<typeof Button> = args => (
-  <Showcase>
-    <ShowcaseSection title="Button" subtitle="with icon">
-      <ShowcaseItem title="Icon">
-        <Button {...args} />
-      </ShowcaseItem>
-    </ShowcaseSection>
-  </Showcase>
-);
-
-Icon.args = {
+Size.args = {
   variant: 'primary',
   size: 'md',
-  title: 'Button',
-  disabled: false,
-  icon: 'car', // TODO: Have selection for icons?
-  iconPosition: 'left',
-  iconSize: 16,
-};
-
-Default.args = {
-  variant: 'primary',
-  size: 'md',
-  title: 'Button',
   disabled: false,
   isLoading: false,
 };
