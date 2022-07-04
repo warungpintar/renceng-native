@@ -33,8 +33,8 @@ const Text = (props: TextProps) => {
 };
 
 Text.defaultProps = {
-  color: 'black',
-  fontFamily: 'OpenSans',
+  color: '#000000',
+  fontFamily: 'OpenSans-Regular',
 };
 
 export default Text;

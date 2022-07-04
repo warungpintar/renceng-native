@@ -258,12 +258,12 @@ export const CustomFont: ComponentStory<typeof Text> = args => (
       </ShowcaseItem>
       <ShowcaseItem title={'Open Sans (regular)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='OpenSans'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} fontFamily='OpenSans-Regular'>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Montserrat (regular)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='Montserrat'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} fontFamily='Montserrat-Regular'>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Default RN Font (semi-bold)'}>
@@ -273,12 +273,12 @@ export const CustomFont: ComponentStory<typeof Text> = args => (
       </ShowcaseItem>
       <ShowcaseItem title={'Open Sans (semi-bold)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='OpenSans-SemiBold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} fontFamily='OpenSans-Semibold'>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Montserrat (semi-bold)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='Montserrat-SemiBold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} fontFamily='Montserrat-Semibold'>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Default RN Font (bold)'}>
