@@ -13,6 +13,7 @@ import {
 } from 'styled-system';
 import styled from '@emotion/native';
 import { Variants } from '../../themes';
+import { colors } from '../../constants';
 
 export type TextProps = TypographyProps &
   RNTextProps &
@@ -33,8 +34,8 @@ const Text = (props: TextProps) => {
 };
 
 Text.defaultProps = {
-  color: 'black',
-  fontFamily: 'OpenSans',
+  color: colors.black,
+  fontFamily: 'OpenSans-Regular',
 };
 
 export default Text;
