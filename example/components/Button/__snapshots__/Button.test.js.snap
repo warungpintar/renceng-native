@@ -8,6 +8,7 @@ exports[`Button in disabled/inactive state doesn't fire event on press 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -24,6 +25,7 @@ exports[`Button in disabled/inactive state doesn't fire event on press 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#E8E8E8",
         "borderColor": "#E8E8E8",
         "borderRadius": 4,
@@ -50,6 +52,7 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -66,6 +69,7 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#E8E8E8",
         "borderColor": "#E8E8E8",
         "borderRadius": 4,
@@ -83,13 +87,13 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
   variant="disabled"
 >
   <Text
-    color="black"
-    fontFamily="OpenSans"
+    color="#000000"
+    fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
-          "color": "black",
-          "fontFamily": "OpenSans",
+          "color": "#000000",
+          "fontFamily": "OpenSans-Regular",
         },
         undefined,
       ]
@@ -108,6 +112,7 @@ exports[`Button in disabled/inactive state shows correct color when disabled 1`]
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -124,6 +129,7 @@ exports[`Button in disabled/inactive state shows correct color when disabled 1`]
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#E8E8E8",
         "borderColor": "#E8E8E8",
         "borderRadius": 4,
@@ -150,6 +156,7 @@ exports[`Button in loading state renders successfully 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={true}
@@ -166,6 +173,7 @@ exports[`Button in loading state renders successfully 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -202,15 +210,15 @@ exports[`Button in loading state renders successfully 1`] = `
       size="small"
     />
     <Text
-      color="black"
-      fontFamily="OpenSans"
+      color="#000000"
+      fontFamily="OpenSans-Regular"
       fontSize={14}
       ml={1}
       style={
         Array [
           Object {
-            "color": "black",
-            "fontFamily": "OpenSans",
+            "color": "#000000",
+            "fontFamily": "OpenSans-Regular",
             "fontSize": 14,
             "marginLeft": 4,
           },
@@ -232,6 +240,7 @@ exports[`Button in loading state should be in disabled state and not triggering 
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={true}
@@ -248,6 +257,7 @@ exports[`Button in loading state should be in disabled state and not triggering 
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -284,15 +294,15 @@ exports[`Button in loading state should be in disabled state and not triggering 
       size="small"
     />
     <Text
-      color="black"
-      fontFamily="OpenSans"
+      color="#000000"
+      fontFamily="OpenSans-Regular"
       fontSize={14}
       ml={1}
       style={
         Array [
           Object {
-            "color": "black",
-            "fontFamily": "OpenSans",
+            "color": "#000000",
+            "fontFamily": "OpenSans-Regular",
             "fontSize": 14,
             "marginLeft": 4,
           },
@@ -314,6 +324,7 @@ exports[`Button in loading state should render loading spinner 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={true}
@@ -330,6 +341,7 @@ exports[`Button in loading state should render loading spinner 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -366,15 +378,15 @@ exports[`Button in loading state should render loading spinner 1`] = `
       size="small"
     />
     <Text
-      color="black"
-      fontFamily="OpenSans"
+      color="#000000"
+      fontFamily="OpenSans-Regular"
       fontSize={14}
       ml={1}
       style={
         Array [
           Object {
-            "color": "black",
-            "fontFamily": "OpenSans",
+            "color": "#000000",
+            "fontFamily": "OpenSans-Regular",
             "fontSize": 14,
             "marginLeft": 4,
           },
@@ -396,6 +408,7 @@ exports[`Button use size props correctly fires the assigned event on press 1`] =
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -412,6 +425,7 @@ exports[`Button use size props correctly fires the assigned event on press 1`] =
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -438,6 +452,7 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -454,6 +469,7 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -471,13 +487,13 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
   variant="primary"
 >
   <Text
-    color="black"
-    fontFamily="OpenSans"
+    color="#000000"
+    fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
-          "color": "black",
-          "fontFamily": "OpenSans",
+          "color": "#000000",
+          "fontFamily": "OpenSans-Regular",
         },
         undefined,
       ]
@@ -496,6 +512,7 @@ exports[`Button use size props correctly renders primary variant and large size 
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -512,6 +529,7 @@ exports[`Button use size props correctly renders primary variant and large size 
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -538,6 +556,7 @@ exports[`Button use size props correctly renders successfully 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -554,6 +573,7 @@ exports[`Button use size props correctly renders successfully 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -580,6 +600,7 @@ exports[`Button use variant props fires the assigned event on press 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -596,6 +617,7 @@ exports[`Button use variant props fires the assigned event on press 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -622,6 +644,7 @@ exports[`Button use variant props outputs correct title/text 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -638,6 +661,7 @@ exports[`Button use variant props outputs correct title/text 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -655,13 +679,13 @@ exports[`Button use variant props outputs correct title/text 1`] = `
   variant="primary"
 >
   <Text
-    color="black"
-    fontFamily="OpenSans"
+    color="#000000"
+    fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
-          "color": "black",
-          "fontFamily": "OpenSans",
+          "color": "#000000",
+          "fontFamily": "OpenSans-Regular",
         },
         undefined,
       ]
@@ -680,6 +704,7 @@ exports[`Button use variant props renders primary variant correctly 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -696,6 +721,7 @@ exports[`Button use variant props renders primary variant correctly 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -722,6 +748,7 @@ exports[`Button use variant props renders successfully 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -738,6 +765,7 @@ exports[`Button use variant props renders successfully 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -764,6 +792,7 @@ exports[`Button with icon renders icon component 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -780,6 +809,7 @@ exports[`Button with icon renders icon component 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -875,6 +905,7 @@ exports[`Button with icon renders successfully 1`] = `
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -892,6 +923,7 @@ exports[`Button with icon renders successfully 1`] = `
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,
@@ -914,6 +946,7 @@ exports[`Button with icon shouldn't render icon component if icon property is em
     }
   }
   accessible={true}
+  alignItems="center"
   collapsable={false}
   focusable={true}
   isLoading={false}
@@ -930,6 +963,7 @@ exports[`Button with icon shouldn't render icon component if icon property is em
   style={
     Array [
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FECF28",
         "borderColor": "#FECF28",
         "borderRadius": 4,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {render} from '@testing-library/react-native';
+import {render,fireEvent,waitFor} from '@testing-library/react-native';
 import {View} from '@warungpintar/renceng-native';
 
 describe('View', () => {
@@ -94,6 +94,19 @@ describe('View', () => {
     expect(style.borderWidth).toEqual(1);
     expect(style.height).toEqual(100);
     expect(style.width).toEqual(200);
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  test('onPress', async () => {
+    const mockFn = jest.fn(() => {});
+    const props = {
+      testID: 'my-view',
+      onPress: mockFn
+    };
+    const {queryByTestId, toJSON} = render(<View {...props}> </View>);
+    const viewCompoenent = queryByTestId('my-view');
+    fireEvent.press(viewCompoenent);
+    await waitFor(() => expect(mockFn.mock.calls.length).toBe(1));
     expect(toJSON()).toMatchSnapshot();
   });
 });

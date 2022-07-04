@@ -54,6 +54,29 @@ exports[`View color 1`] = `
 </View>
 `;
 
+exports[`View onPress 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="my-view"
+>
+   
+</View>
+`;
+
 exports[`View rounded 1`] = `
 <View
   bg="white"

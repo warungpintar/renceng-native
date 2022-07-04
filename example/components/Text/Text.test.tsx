@@ -12,7 +12,7 @@ describe('Text', () => {
     const textQuery = queryByTestId('my-text');
     const style = textQuery.props.style[0];
     const content = textQuery.children.toString();
-    expect(style.color).toMatch('black');
+    expect(style.color).toMatch('#000000');
     expect(style.fontSize).toEqual(12);
     expect(content.match('Text Content'));
     expect(toJSON()).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('Text', () => {
     const textQuery = queryByTestId('my-text');
     const style = textQuery.props.style[0];
     const content = textQuery.children.toString();
-    expect(style.color).toMatch('black');
+    expect(style.color).toMatch('#000000');
     expect(style.fontSize).toEqual(14);
     expect(content.match('Text Content'));
     expect(toJSON()).toMatchSnapshot();
@@ -39,7 +39,7 @@ describe('Text', () => {
     const textQuery = queryByTestId('my-text');
     const style = textQuery.props.style[0];
     const content = textQuery.children.toString();
-    expect(style.color).toMatch('black');
+    expect(style.color).toMatch('#000000');
     expect(style.textAlign).toMatch('left');
     expect(content.match('Text Content'));
     expect(toJSON()).toMatchSnapshot();
