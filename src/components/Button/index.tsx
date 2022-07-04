@@ -19,6 +19,10 @@ import {
   BorderProps,
   typography,
   TypographyProps,
+  position,
+  PositionProps,
+  flexbox,
+  FlexboxProps,
   variant as systemVariant,
 } from 'styled-system';
 const { ButtonVariants, ButtonSizes } = Variants;
@@ -45,7 +49,9 @@ export type ButtonProps = {
   ColorProps &
   SpaceProps &
   BorderProps &
-  TypographyProps;
+  TypographyProps &
+  FlexboxProps &
+  PositionProps;
 
 const BaseButton = styled(Base)<ButtonProps>`
   ${compose(
@@ -53,6 +59,8 @@ const BaseButton = styled(Base)<ButtonProps>`
     space,
     border,
     typography,
+    position,
+    flexbox,
     systemVariant(ButtonVariants),
     systemVariant(ButtonSizes)
   )}
@@ -158,6 +166,7 @@ Button.defaultProps = {
   size: 'md',
   disabled: false,
   isLoading: false,
+  alignItems: 'center',
 };
 
 export default Button;
