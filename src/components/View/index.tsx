@@ -1,5 +1,10 @@
 import React from 'react';
-import { View as RNView, ViewProps as RNViewProps } from 'react-native';
+import {
+  View as RNView,
+  ViewProps as RNViewProps,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from 'react-native';
 
 import {
   space,
@@ -29,7 +34,8 @@ export type ViewProps = SpaceProps &
   BorderProps &
   PositionProps &
   ShadowProps &
-  RNViewProps & {
+  RNViewProps &
+  TouchableOpacityProps & {
     shadowColor?: string;
     shadowOffset?: {
       width: number;
@@ -41,7 +47,9 @@ export type ViewProps = SpaceProps &
   };
 
 const View = (props: ViewProps) => {
-  const BaseView = styled(RNView)<ViewProps>`
+  const Base = typeof props.onPress === 'function' ? TouchableOpacity : RNView;
+
+  const BaseView = styled(Base)<ViewProps>`
     ${space}
     ${color}
     ${layout}
