@@ -87,12 +87,12 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
   variant="disabled"
 >
   <Text
-    color="#000000"
+    color="#161616"
     fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "#161616",
           "fontFamily": "OpenSans-Regular",
         },
         undefined,
@@ -210,14 +210,14 @@ exports[`Button in loading state renders successfully 1`] = `
       size="small"
     />
     <Text
-      color="#000000"
+      color="#161616"
       fontFamily="OpenSans-Regular"
       fontSize={14}
       ml={1}
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "#161616",
             "fontFamily": "OpenSans-Regular",
             "fontSize": 14,
             "marginLeft": 4,
@@ -294,14 +294,14 @@ exports[`Button in loading state should be in disabled state and not triggering 
       size="small"
     />
     <Text
-      color="#000000"
+      color="#161616"
       fontFamily="OpenSans-Regular"
       fontSize={14}
       ml={1}
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "#161616",
             "fontFamily": "OpenSans-Regular",
             "fontSize": 14,
             "marginLeft": 4,
@@ -378,14 +378,14 @@ exports[`Button in loading state should render loading spinner 1`] = `
       size="small"
     />
     <Text
-      color="#000000"
+      color="#161616"
       fontFamily="OpenSans-Regular"
       fontSize={14}
       ml={1}
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "#161616",
             "fontFamily": "OpenSans-Regular",
             "fontSize": 14,
             "marginLeft": 4,
@@ -487,12 +487,12 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
   variant="primary"
 >
   <Text
-    color="#000000"
+    color="#161616"
     fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "#161616",
           "fontFamily": "OpenSans-Regular",
         },
         undefined,
@@ -679,12 +679,12 @@ exports[`Button use variant props outputs correct title/text 1`] = `
   variant="primary"
 >
   <Text
-    color="#000000"
+    color="#161616"
     fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "#161616",
           "fontFamily": "OpenSans-Regular",
         },
         undefined,

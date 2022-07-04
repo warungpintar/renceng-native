@@ -2,12 +2,12 @@
 
 exports[`Text align 1`] = `
 <Text
-  color="#000000"
+  color="#161616"
   fontFamily="OpenSans-Regular"
   style={
     Array [
       Object {
-        "color": "#000000",
+        "color": "#161616",
         "fontFamily": "OpenSans-Regular",
         "textAlign": "left",
       },
@@ -23,13 +23,13 @@ exports[`Text align 1`] = `
 
 exports[`Text basic 1`] = `
 <Text
-  color="#000000"
+  color="#161616"
   fontFamily="OpenSans-Regular"
   fontSize={12}
   style={
     Array [
       Object {
-        "color": "#000000",
+        "color": "#161616",
         "fontFamily": "OpenSans-Regular",
         "fontSize": 12,
       },
@@ -45,12 +45,12 @@ exports[`Text basic 1`] = `
 exports[`Text category 1`] = `
 <Text
   category="md"
-  color="#000000"
+  color="#161616"
   fontFamily="OpenSans-Regular"
   style={
     Array [
       Object {
-        "color": "#000000",
+        "color": "#161616",
         "fontFamily": "OpenSans-Regular",
         "fontSize": 14,
       },
