@@ -124,16 +124,24 @@ export const State: ComponentStory<typeof Button> = args => (
   <Showcase>
     <ShowcaseSection title="Button" subtitle="State">
       <ShowcaseItem title="Regular">
-        <Button><Text>Regular</Text></Button>
+        <View width={120}>
+          <Button><Text>Regular</Text></Button>
+        </View>
       </ShowcaseItem>
       <ShowcaseItem title="Loading">
-        <Button isLoading><Text>Loading</Text></Button>
+        <View width={120}>
+          <Button isLoading><Text>Loading</Text></Button>
+        </View>
       </ShowcaseItem>
       <ShowcaseItem title="Disabled">
-        <Button disabled><Text>Disabled</Text></Button>
+        <View width={120}>
+          <Button disabled><Text>Disabled</Text></Button>
+        </View>
       </ShowcaseItem>
       <ShowcaseItem title="Loading & Disabled">
-        <Button disabled isLoading><Text>Loading & Disabled</Text></Button>
+        <View width={120}>
+          <Button disabled isLoading><Text>Loading & Disabled</Text></Button>
+        </View>
       </ShowcaseItem>
     </ShowcaseSection>
   </Showcase>
