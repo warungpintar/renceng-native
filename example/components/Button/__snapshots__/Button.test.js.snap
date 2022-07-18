@@ -209,25 +209,6 @@ exports[`Button in loading state renders successfully 1`] = `
       color="#161616"
       size="small"
     />
-    <Text
-      color="#161616"
-      fontFamily="OpenSans-Regular"
-      fontSize={14}
-      ml={1}
-      style={
-        Array [
-          Object {
-            "color": "#161616",
-            "fontFamily": "OpenSans-Regular",
-            "fontSize": 14,
-            "marginLeft": 4,
-          },
-          undefined,
-        ]
-      }
-    >
-      Loading
-    </Text>
   </View>
 </View>
 `;
@@ -293,25 +274,6 @@ exports[`Button in loading state should be in disabled state and not triggering 
       color="#161616"
       size="small"
     />
-    <Text
-      color="#161616"
-      fontFamily="OpenSans-Regular"
-      fontSize={14}
-      ml={1}
-      style={
-        Array [
-          Object {
-            "color": "#161616",
-            "fontFamily": "OpenSans-Regular",
-            "fontSize": 14,
-            "marginLeft": 4,
-          },
-          undefined,
-        ]
-      }
-    >
-      Loading
-    </Text>
   </View>
 </View>
 `;
@@ -377,25 +339,6 @@ exports[`Button in loading state should render loading spinner 1`] = `
       color="#161616"
       size="small"
     />
-    <Text
-      color="#161616"
-      fontFamily="OpenSans-Regular"
-      fontSize={14}
-      ml={1}
-      style={
-        Array [
-          Object {
-            "color": "#161616",
-            "fontFamily": "OpenSans-Regular",
-            "fontSize": 14,
-            "marginLeft": 4,
-          },
-          undefined,
-        ]
-      }
-    >
-      Loading
-    </Text>
   </View>
 </View>
 `;

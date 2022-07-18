@@ -114,23 +114,6 @@ const Button = ({
       }
     })();
 
-    const textSize = (() => {
-      switch (size) {
-        case 'xl':
-          return 18;
-        case 'lg':
-          return 16;
-        case 'md':
-          return 14;
-        case 'sm':
-          return 12;
-        case 'xs':
-          return 11;
-        default:
-          return 14;
-      }
-    })();
-
     /* Override to disabled props so it don't trigger actions */
     usedProps.disabled = true;
     usedProps.android_disableSound = true;
@@ -143,9 +126,6 @@ const Button = ({
             color={ButtonVariants.variants[currentVariant].color}
             accessibilityHint="loading"
           />
-          <Text fontSize={textSize} ml={1}>
-            Loading
-          </Text>
         </View>
       </BaseButton>
     );
