@@ -2,7 +2,7 @@
   <img src="./logo.png">
 </p>
 
-renceng-native is an implementation of Renceng Design Language System for react-native apps.
+renceng-native is an implementation of Renceng Design Language System for react-native apps using [styled-system](https://styled-system.com/) and [@emotion-native](https://emotion.sh/docs/@emotion/native).
 
 
 
