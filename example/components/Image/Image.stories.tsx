@@ -12,6 +12,8 @@ export default {
   component: Image,
 } as ComponentMeta<typeof Image>;
 
+import WP from './assets/images/WP.png';
+
 export const URI: ComponentStory<typeof Image> = args => (
   <Showcase>
     <ShowcaseSection title="Image" subtitle="Image with URL">
@@ -102,7 +104,7 @@ URI.args = {
 };
 
 LocalPath.args = {
-  source: require('../Image/assets/images/WP.png'),
+  source: WP,
 };
 
 WithBorder.args = {
