@@ -20,9 +20,6 @@ export type ImageProps = LayoutProps &
     withProxy?: boolean;
     height: string | number;
     width: string | number;
-    source: {
-      uri: string;
-    };
   };
 
 const Image = (props: ImageProps) => {
