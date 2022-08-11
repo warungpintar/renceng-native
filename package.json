@@ -1,14 +1,32 @@
 {
+  "name": "@warungpintar/renceng-native",
   "version": "0.0.7",
+  "description": "renceng-native is an implementation of Renceng Design Language System for react-native apps.",
+  "author": "Muhammad Irsyad",
   "license": "MIT",
   "main": "dist/index.js",
+  "module": "dist/renceng-native.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/warungpintar/renceng-native#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warungpintar/renceng-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/warungpintar/renceng-native/issues"
+  },
   "engines": {
     "node": ">=10"
   },
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "renceng"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -17,13 +35,40 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
+    "prettier": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier:examples": "prettier --write \"./example/**/*.{js,jsx,ts,tsx}\"",
     "publish:local": "yalc publish",
     "prepare-husky": "husky install",
     "test:unitcomponents": "tsdx test --bail --verbose --passWithNoTests"
   },
+  "dependencies": {
+    "@emotion/native": "^11.0.0",
+    "@emotion/react": "^11.9.0",
+    "@types/styled-system": "^5.1.15",
+    "emotion-theming": "^10.0.19",
+    "global": "^4.4.0",
+    "react-native-eva-icons": "^1.3.1",
+    "react-native-svg": "^12.3.0",
+    "styled-system": "^5.1.2"
+  },
   "peerDependencies": {
     "react": "^16.8.6",
     "react-native": "^0.64.0"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@types/react": "^17.0.3",
+    "@types/react-native": "^0.64.2",
+    "@warungpintar/prettier-config": "^0.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.2",
+    "prettier": "^2.7.1",
+    "react": "^16.8.6",
+    "react-native": "^0.64.0",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
   },
   "husky": {
     "hooks": {
@@ -40,15 +85,7 @@
       "yarn lint --fix"
     ]
   },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "name": "@warungpintar/renceng-native",
-  "author": "Muhammad Irsyad",
-  "module": "dist/renceng-native.esm.js",
+  "prettier": "@warungpintar/prettier-config",
   "size-limit": [
     {
       "path": "dist/renceng-native.cjs.production.min.js",
@@ -58,43 +95,5 @@
       "path": "dist/renceng-native.esm.js",
       "limit": "300 KB"
     }
-  ],
-  "devDependencies": {
-    "@size-limit/preset-small-lib": "^7.0.8",
-    "@types/react": "^17.0.3",
-    "@types/react-native": "^0.64.2",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.2",
-    "react": "^16.8.6",
-    "react-native": "^0.64.0",
-    "size-limit": "^7.0.8",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.3.1",
-    "typescript": "^4.6.2"
-  },
-  "dependencies": {
-    "@emotion/native": "^11.0.0",
-    "@emotion/react": "^11.9.0",
-    "@types/styled-system": "^5.1.15",
-    "emotion-theming": "^10.0.19",
-    "global": "^4.4.0",
-    "react-native-eva-icons": "^1.3.1",
-    "react-native-svg": "^12.3.0",
-    "styled-system": "^5.1.2"
-  },
-  "description": "renceng-native is an implementation of Renceng Design Language System for react-native apps.",
-  "directories": {
-    "example": "example"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/warungpintar/renceng-native.git"
-  },
-  "keywords": [
-    "renceng"
-  ],
-  "bugs": {
-    "url": "https://github.com/warungpintar/renceng-native/issues"
-  },
-  "homepage": "https://github.com/warungpintar/renceng-native#readme"
+  ]
 }

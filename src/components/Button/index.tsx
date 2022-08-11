@@ -62,7 +62,7 @@ const BaseButton = styled(Base)<ButtonProps>`
     position,
     flexbox,
     systemVariant(ButtonVariants),
-    systemVariant(ButtonSizes)
+    systemVariant(ButtonSizes),
   )}
 `;
 

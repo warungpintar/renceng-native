@@ -27,7 +27,7 @@ export type TextProps = TypographyProps &
 
 const Text = (props: TextProps) => {
   const BaseText = styled(RNText)<TextProps>(
-    compose(typography, space, colorSystem, flex, Variants.TextCategory)
+    compose(typography, space, colorSystem, flex, Variants.TextCategory),
   );
 
   return <BaseText {...props} />;
