@@ -31,10 +31,11 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
     "prettier:examples": "prettier --write \"./example/**/*.{js,jsx,ts,tsx}\"",
     "publish:local": "yalc publish",
@@ -55,11 +56,17 @@
     "react": "^16.8.6",
     "react-native": "^0.64.0"
   },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
     "@types/react": "^17.0.3",
     "@types/react-native": "^0.64.2",
+    "@warungpintar/eslint-config": "^0.1.0",
     "@warungpintar/prettier-config": "^0.2.0",
+    "eslint": "^8.21.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.2",
     "prettier": "^2.7.1",

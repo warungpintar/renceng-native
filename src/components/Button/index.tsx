@@ -138,7 +138,7 @@ const Button = ({
       props.children
     );
 
-  return <BaseButton {...usedProps} children={child} />;
+  return <BaseButton {...usedProps}>{child}</BaseButton>;
 };
 
 Button.defaultProps = {
