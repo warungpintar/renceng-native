@@ -10,10 +10,12 @@ import {
   flex,
   FlexProps,
   compose,
+  variant as systemVariant,
 } from 'styled-system';
 import styled from '@emotion/native';
 import { Variants } from '../../themes';
 import { colors } from '../../constants';
+const { TextWeight, TextCategory } = Variants;
 
 export type TextProps = TypographyProps &
   RNTextProps &
@@ -23,11 +25,19 @@ export type TextProps = TypographyProps &
     children?: React.ReactNode;
     category?: string;
     color?: string;
+    weight?: string;
   };
 
 const Text = (props: TextProps) => {
   const BaseText = styled(RNText)<TextProps>(
-    compose(typography, space, colorSystem, flex, Variants.TextCategory),
+    compose(
+      typography,
+      space,
+      colorSystem,
+      flex,
+      systemVariant(TextCategory),
+      systemVariant(TextWeight),
+    ),
   );
 
   return <BaseText {...props} />;
@@ -35,7 +45,7 @@ const Text = (props: TextProps) => {
 
 Text.defaultProps = {
   color: colors.black,
-  fontFamily: 'OpenSans-Regular',
+  weight: 'regular',
 };
 
 export default Text;
