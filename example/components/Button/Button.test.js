@@ -18,7 +18,11 @@ describe('Button', () => {
       it's unmounted before it finish running each cases
     */
     it('outputs correct title/text', () => {
-      const {getByText, toJSON} = render(<Button {...primaryProps}><Text>My Button</Text></Button>);
+      const {getByText, toJSON} = render(
+        <Button {...primaryProps}>
+          <Text>My Button</Text>
+        </Button>,
+      );
 
       expect(getByText('My Button')).toBeTruthy();
       expect(toJSON()).toMatchSnapshot();
@@ -63,7 +67,11 @@ describe('Button', () => {
     };
 
     it('outputs correct title/text', () => {
-      const {getByText, toJSON} = render(<Button {...primaryProps}><Text>My Button</Text></Button>);
+      const {getByText, toJSON} = render(
+        <Button {...primaryProps}>
+          <Text>My Button</Text>
+        </Button>,
+      );
 
       expect(getByText('My Button')).toBeTruthy();
       expect(toJSON()).toMatchSnapshot();
@@ -113,7 +121,11 @@ describe('Button', () => {
     };
 
     it('outputs correct title/text', () => {
-      const {getByText, toJSON} = render(<Button {...disabledProps}><Text>My Button</Text></Button>);
+      const {getByText, toJSON} = render(
+        <Button {...disabledProps}>
+          <Text>My Button</Text>
+        </Button>,
+      );
 
       expect(getByText('My Button')).toBeTruthy();
       expect(toJSON()).toMatchSnapshot();
@@ -145,17 +157,21 @@ describe('Button', () => {
       testID: 'myIconButton',
       variant: 'primary',
       size: 'md',
-      onPress: mockFn
+      onPress: mockFn,
     };
 
     const iconProps = {
       testID: 'my-icon',
       name: 'car-outline',
       size: 16,
-    }
+    };
 
     it('renders icon component', () => {
-      const {queryAllByTestId, toJSON} = render(<Button {...buttonProps}><Icon {...iconProps}/></Button>);
+      const {queryAllByTestId, toJSON} = render(
+        <Button {...buttonProps}>
+          <Icon {...iconProps} />
+        </Button>,
+      );
       const iconElement = queryAllByTestId('my-icon');
 
       expect(iconElement.length).toBe(1);

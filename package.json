@@ -85,7 +85,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "yarn test:unitcomponents --collect-coverage",
-      "yarn lint - --fix",
+      "yarn lint --fix",
       "yarn prettier --write"
     ],
     "src/*.{css,md,html}": [
