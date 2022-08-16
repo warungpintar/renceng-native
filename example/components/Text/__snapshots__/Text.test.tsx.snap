@@ -3,7 +3,6 @@
 exports[`Text align 1`] = `
 <Text
   color="#161616"
-  fontFamily="OpenSans-Regular"
   style={
     Array [
       Object {
@@ -16,6 +15,7 @@ exports[`Text align 1`] = `
   }
   testID="my-text"
   textAlign="left"
+  weight="regular"
 >
   Text Content
 </Text>
@@ -24,7 +24,6 @@ exports[`Text align 1`] = `
 exports[`Text basic 1`] = `
 <Text
   color="#161616"
-  fontFamily="OpenSans-Regular"
   fontSize={12}
   style={
     Array [
@@ -37,6 +36,7 @@ exports[`Text basic 1`] = `
     ]
   }
   testID="my-text"
+  weight="regular"
 >
   Text Content
 </Text>
@@ -46,7 +46,6 @@ exports[`Text category 1`] = `
 <Text
   category="md"
   color="#161616"
-  fontFamily="OpenSans-Regular"
   style={
     Array [
       Object {
@@ -58,6 +57,7 @@ exports[`Text category 1`] = `
     ]
   }
   testID="my-text"
+  weight="regular"
 >
   Text Content
 </Text>
@@ -66,7 +66,6 @@ exports[`Text category 1`] = `
 exports[`Text color 1`] = `
 <Text
   color="#FECF28"
-  fontFamily="OpenSans-Regular"
   style={
     Array [
       Object {
@@ -77,6 +76,7 @@ exports[`Text color 1`] = `
     ]
   }
   testID="my-text"
+  weight="regular"
 >
   Text Content
 </Text>
