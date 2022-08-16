@@ -18,7 +18,9 @@ export const Basic: ComponentStory<typeof Text> = args => (
     <ShowcaseSection title="Text" subtitle="Basic">
       <ShowcaseItem title={'react-native style'}>
         <View width={200}>
-          <Text style={{ fontSize: 16, color: 'red' }}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text style={{fontSize: 16, color: 'red'}}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'11px'}>
@@ -28,47 +30,65 @@ export const Basic: ComponentStory<typeof Text> = args => (
       </ShowcaseItem>
       <ShowcaseItem title={'12px'}>
         <View width={200}>
-          <Text {...args} fontSize={12}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={12}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'14px'}>
         <View width={200}>
-          <Text {...args} fontSize={14}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={14}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'16px'}>
         <View width={200}>
-          <Text {...args} fontSize={16}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={16}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'18px'}>
         <View width={200}>
-          <Text {...args} fontSize={18}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={18}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'20px'}>
         <View width={200}>
-          <Text {...args} fontSize={20}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={20}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'22px'}>
         <View width={200}>
-          <Text {...args} fontSize={22}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={22}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'24px'}>
         <View width={200}>
-          <Text {...args} fontSize={24}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={24}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'28px'}>
         <View width={200}>
-          <Text {...args} fontSize={28}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={28}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'32px'}>
         <View width={200}>
-          <Text {...args} fontSize={32}>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} fontSize={32}>
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
@@ -85,47 +105,65 @@ export const Category: ComponentStory<typeof Text> = args => (
       </ShowcaseItem>
       <ShowcaseItem title={'sm'}>
         <View width={200}>
-          <Text {...args} category='sm'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="sm">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'md'}>
         <View width={200}>
-          <Text {...args} category='md'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="md">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'lg'}>
         <View width={200}>
-          <Text {...args} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'xl'}>
         <View width={200}>
-          <Text {...args} category='xl'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="xl">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'2xl'}>
         <View width={200}>
-          <Text {...args} category='2xl'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="2xl">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'3xl'}>
         <View width={200}>
-          <Text {...args} category='3xl'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="3xl">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'4xl'}>
         <View width={200}>
-          <Text {...args} category='4xl'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="4xl">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'5xl'}>
         <View width={200}>
-          <Text {...args} category='5xl'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="5xl">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'6xl'}>
         <View width={200}>
-          <Text {...args} category='6xl'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="6xl">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
@@ -137,17 +175,23 @@ export const Align: ComponentStory<typeof Text> = args => (
     <ShowcaseSection title="Text" subtitle="Align">
       <ShowcaseItem title={'Align left'}>
         <View width={200} bg={colors.primary}>
-          <Text {...args} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Align right'}>
         <View width={200} bg={colors.primary}>
-          <Text {...args} category='lg' textAlign='right'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg" textAlign="right">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Center'}>
         <View width={200} bg={colors.primary}>
-          <Text {...args} category='lg' textAlign='center'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg" textAlign="center">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
@@ -159,67 +203,93 @@ export const Color: ComponentStory<typeof Text> = args => (
     <ShowcaseSection title="Text" subtitle="Color">
       <ShowcaseItem title={'Primary'}>
         <View width={200}>
-          <Text {...args} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Gray.100'}>
         <View width={200}>
-          <Text {...args} color={colors.gray[100]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.gray[100]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Gray.500'}>
         <View width={200}>
-          <Text {...args} color={colors.gray[500]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.gray[500]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Yellow.100'}>
         <View width={200}>
-          <Text {...args} color={colors.yellow[100]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.yellow[100]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Yellow.500'}>
         <View width={200}>
-          <Text {...args} color={colors.yellow[500]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.yellow[500]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Blue.100'}>
         <View width={200}>
-          <Text {...args} color={colors.blue[100]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.blue[100]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Blue.500'}>
         <View width={200}>
-          <Text {...args} color={colors.blue[500]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.blue[500]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Green.100'}>
         <View width={200}>
-          <Text {...args} color={colors.green[100]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.green[100]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Green.500'}>
         <View width={200}>
-          <Text {...args} color={colors.green[500]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.green[500]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Red.100'}>
         <View width={200}>
-          <Text {...args} color={colors.red[100]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.red[100]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Red.500'}>
         <View width={200}>
-          <Text {...args} color={colors.red[500]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.red[500]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Orang.100'}>
         <View width={200}>
-          <Text {...args} color={colors.orange[100]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.orange[100]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Orange.500'}>
         <View width={200}>
-          <Text {...args} color={colors.orange[500]} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} color={colors.orange[500]} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
@@ -231,69 +301,72 @@ export const Weight: ComponentStory<typeof Text> = args => (
     <ShowcaseSection title="Text" subtitle="Weight">
       <ShowcaseItem title={'Regular'}>
         <View width={200}>
-          <Text {...args} category='lg'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Semi-Bold'}>
         <View width={200}>
-          <Text {...args} category='lg' fontFamily='OpenSans-SemiBold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg" fontFamily="OpenSans-SemiBold">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Bold'}>
         <View width={200}>
-          <Text {...args} category='lg' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text {...args} category="lg" fontWeight="bold">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
   </Showcase>
 );
 
-export const CustomFont: ComponentStory<typeof Text> = args => (
+export const Font: ComponentStory<typeof Text> = args => (
   <Showcase>
-    <ShowcaseSection title="Text" subtitle="Custom Font: Only works in react native storybook(for now)">
-      <ShowcaseItem title={'Default RN Font (regular)'}>
-        <View width={160}>
-          <Text fontSize={16} fontFamily='unknown'>Forage shoreditch flannel seitan skateboard</Text>
-        </View>
-      </ShowcaseItem>
+    <ShowcaseSection
+      title="Text"
+      subtitle="Font: Only works in react native storybook(for now)">
       <ShowcaseItem title={'Open Sans (regular)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='OpenSans-Regular'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16}>Forage shoreditch flannel seitan skateboard</Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Montserrat (regular)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='Montserrat-Regular'>Forage shoreditch flannel seitan skateboard</Text>
-        </View>
-      </ShowcaseItem>
-      <ShowcaseItem title={'Default RN Font (semi-bold)'}>
-        <View width={160}>
-          <Text fontSize={16} fontFamily='unknown' fontWeight='600'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} weight="regular2">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Open Sans (semi-bold)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='OpenSans-Semibold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} weight="semibold">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Montserrat (semi-bold)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='Montserrat-Semibold'>Forage shoreditch flannel seitan skateboard</Text>
-        </View>
-      </ShowcaseItem>
-      <ShowcaseItem title={'Default RN Font (bold)'}>
-        <View width={160}>
-          <Text fontSize={16} fontFamily='unknown' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} weight="semibold2">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Open Sans (bold)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='OpenSans' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} weight="bold">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
       <ShowcaseItem title={'Montserrat (bold)'}>
         <View width={160}>
-          <Text fontSize={16} fontFamily='Montserrat' fontWeight='bold'>Forage shoreditch flannel seitan skateboard</Text>
+          <Text fontSize={16} weight="bold2">
+            Forage shoreditch flannel seitan skateboard
+          </Text>
         </View>
       </ShowcaseItem>
     </ShowcaseSection>
@@ -301,25 +374,25 @@ export const CustomFont: ComponentStory<typeof Text> = args => (
 );
 
 Basic.args = {
-  fontSize: 11
+  fontSize: 11,
 };
 
 Category.args = {
-  category: 'xs'
+  category: 'xs',
 };
 
 Align.args = {
-  textAlign: 'left'
-}
+  textAlign: 'left',
+};
 
 Color.args = {
-  color: colors.primary
-}
+  color: colors.primary,
+};
 
 Weight.args = {
   fontWeight: '400',
-}
+};
 
-CustomFont.args = {
-  fontSize: 11
+Font.args = {
+  fontSize: 11,
 };
