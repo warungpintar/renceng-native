@@ -88,7 +88,6 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
 >
   <Text
     color="#161616"
-    fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
@@ -98,6 +97,7 @@ exports[`Button in disabled/inactive state outputs correct title/text 1`] = `
         undefined,
       ]
     }
+    weight="regular"
   >
     My Button
   </Text>
@@ -431,7 +431,6 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
 >
   <Text
     color="#161616"
-    fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
@@ -441,6 +440,7 @@ exports[`Button use size props correctly outputs correct title/text 1`] = `
         undefined,
       ]
     }
+    weight="regular"
   >
     My Button
   </Text>
@@ -623,7 +623,6 @@ exports[`Button use variant props outputs correct title/text 1`] = `
 >
   <Text
     color="#161616"
-    fontFamily="OpenSans-Regular"
     style={
       Array [
         Object {
@@ -633,6 +632,7 @@ exports[`Button use variant props outputs correct title/text 1`] = `
         undefined,
       ]
     }
+    weight="regular"
   >
     My Button
   </Text>

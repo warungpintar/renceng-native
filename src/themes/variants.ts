@@ -1,7 +1,5 @@
-import { variant } from 'styled-system';
-
 export const Variants = {
-  TextCategory: variant({
+  TextCategory: {
     prop: 'category',
     variants: {
       xs: { fontSize: 11 },
@@ -15,7 +13,42 @@ export const Variants = {
       '5xl': { fontSize: 28 },
       '6xl': { fontSize: 32 },
     },
-  }),
+  },
+  TextWeight: {
+    prop: 'weight',
+    variants: {
+      regular: {
+        fontFamily: 'OpenSans-Regular',
+      },
+      semibold: {
+        fontFamily: 'OpenSans-SemiBold',
+      },
+      bold: {
+        fontFamily: 'OpenSans-Bold',
+      },
+      light: {
+        fontFamily: 'OpenSans-Light',
+      },
+      italic: {
+        fontFamily: 'OpenSans-Italic',
+      },
+      regular2: {
+        fontFamily: 'Montserrat-Regular',
+      },
+      semibold2: {
+        fontFamily: 'Montserrat-SemiBold',
+      },
+      bold2: {
+        fontFamily: 'Montserrat-Bold',
+      },
+      light2: {
+        fontFamily: 'Montserrat-Light',
+      },
+      italic2: {
+        fontFamily: 'Montserrat-Italic',
+      },
+    },
+  },
   ButtonVariants: {
     variants: {
       custom: {
