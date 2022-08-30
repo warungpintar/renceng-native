@@ -1,6 +1,6 @@
 {
   "name": "@warungpintar/renceng-native",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "renceng-native is an implementation of Renceng Design Language System for react-native apps.",
   "author": "Muhammad Irsyad",
   "license": "MIT",
